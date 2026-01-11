@@ -1,0 +1,253 @@
+.features {
+  background: linear-gradient(135deg, #ff8f00, #ff6f00);
+  color: #fff;
+  padding: 90px 6% 70px;
+  position: relative;
+  overflow: hidden;
+   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("../assets/background.png") center/cover no-repeat!important;
+    border-top: 2px solid orange;
+}
+
+/* BACKGROUND SHAPES */
+.features::before,
+.features::after {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.features::before {
+  top: -180px;
+  left: -180px;
+}
+
+.features::after {
+  bottom: -220px;
+  right: -180px;
+}
+
+/* HEADER */
+.features-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.features-header {
+  max-width: 760px;
+}
+
+.feature-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.features-header h2 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* BADGE */
+.contact-badge {
+  width: 150px;
+  height: 150px;
+  padding: 6px;
+  background: linear-gradient(180deg, #ffd180, #ff9800);
+  border-radius: 50%;
+  animation: spin 10s linear infinite;
+  transition: transform 0.5s ease;
+}
+
+.contact-badge:hover {
+  transform: scale(1.15);
+}
+
+.contact-badge img {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* FEATURES GRID */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin-top: 80px;
+}
+
+.feature-card {
+  text-align: left;
+  transition: transform 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ICON ZOOM */
+.feature-icon {
+  font-size: 42px;
+  margin-bottom: 18px;
+  transition: transform 0.4s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.25);
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.95;
+  color: white;
+}
+
+/* DIVIDER */
+.features-divider {
+  margin: 80px 0 40px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* STATS */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  padding-left: 26px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.stat-box:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.stat-box h3 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.stat-box span {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .features {
+    padding: 70px 6%;
+  }
+
+  .features-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .features-header h2 {
+    font-size: 32px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .feature-card {
+    text-align: center;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .stat-box {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .contact-badge {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .features-header h2 {
+    font-size: 26px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+/* Center icon on mobile automatically */
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.25);
+  background: rgba(255, 255, 255, 0.28);
+}
+@media (max-width: 768px) {
+  .feature-card {
+    align-items: center;
+  }
+}

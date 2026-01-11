@@ -1,0 +1,147 @@
+:root {
+  --primaryRed: orange;
+  --textDark: #111;
+  --textMuted: #777;
+}
+
+/* BACKGROUND */
+.faqGridBackground {
+  /* background-color: #f9f9f9;
+  background-image:
+    linear-gradient(#eee 1px, transparent 1px),
+    linear-gradient(90deg, #eee 1px, transparent 1px);
+  background-size: 28px 28px; */
+   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("../assets/background.png") center/cover no-repeat!important;
+    border-top: 2px solid orange;
+}
+
+/* MAIN WRAPPER */
+.faqMainWrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.faqContentLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primaryRed);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.faqLabelIcon {
+  width: 18px;
+  height: 18px;
+  background: var(--primaryRed);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faqHeading {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.faqHeading span {
+  color: var(--primaryRed);
+}
+
+.faqParagraph {
+  color: var(--textMuted);
+  line-height: 1.7;
+  margin-bottom: 30px;
+   color: white;
+}
+
+.faqBenefits {
+  list-style: none;
+  padding: 0;
+}
+
+.faqBenefits li {
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.faqBenefits li::before {
+  content: "✔";
+  width: 18px;
+  height: 18px;
+  background: var(--primaryRed);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RIGHT CARD */
+.faqAccordionCard {
+  background: #fff;
+  border-radius: 26px;
+  padding: 30px 34px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.faqAccordionItem {
+  border-bottom: 1px solid #eee;
+}
+
+.faqAccordionItem:last-child {
+  border-bottom: none;
+}
+
+.faqAccordionHeader {
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--textDark);
+}
+
+.faqToggleIcon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faqToggleIcon.active {
+  transform: rotate(180deg);
+  color: var(--primaryRed);
+}
+
+.faqAccordionBody {
+  padding-bottom: 18px;
+  color: var(--textMuted);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .faqMainWrapper {
+    grid-template-columns: 1fr;
+  }
+}

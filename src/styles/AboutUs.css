@@ -1,0 +1,278 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SECTION */
+.about {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("../assets/background.png") center/cover no-repeat;
+  border-top: 2px solid orange;
+  color: white;
+}
+
+.about-wrapper {
+  width: 88%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT MEDIA */
+.about-media {
+  width: 50%;
+  position: relative;
+}
+
+.media-img {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,.2);
+}
+
+/* 🔥 FIXED IMAGE CONTROL */
+.media-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.media-img.secondary {
+  width: 55%;
+  height: auto;
+  position: absolute;
+  right: -25px;
+  bottom: -70px;
+}
+
+/* BADGE */
+.media-badge {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.media-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT CONTENT */
+.about-info {
+  width: 50%;
+  color: #fff;
+}
+
+.about-label {
+  margin-top: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: white!important;
+}
+
+.about-heading {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 52px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-heading span {
+  color: orange;
+}
+
+.about-desc {
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: white!important; 
+}
+
+/* EXPERIENCE */
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* 🔥 FIXED CARD IMAGE */
+.experience-img {
+  width: 220px;
+  height: 150px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.experience-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTACT */
+.contact-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #000;
+  border: 2px solid orange;
+  padding: 22px;
+  border-radius: 20px;
+}
+
+.contact-icon img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.contact-btn {
+  margin-left: auto;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: orange;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ANIMATIONS */
+.zoom-hover img {
+  transition: transform .4s ease;
+}
+
+.zoom-hover:hover img {
+  transform: scale(1.1);
+}
+
+.spin-slow {
+  animation: spin 10s linear infinite;
+}
+
+.contact-text p,
+.contact-text h4 {
+  color: white!important;
+}
+
+.contact-btn {
+  background-color: white!important;
+}
+
+@keyframes spin {
+  from { transform: translateX(-50%) rotate(0); }
+  to { transform: translateX(-50%) rotate(360deg); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .about-label {
+    margin-top: 50px;
+  }
+
+  .about-media,
+  .about-info {
+    width: 100%;
+  }
+
+  .media-img.secondary {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+/* SMALL TABLET / MOBILE */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .experience {
+    gap: 15px;
+  }
+
+  .experience-img {
+    width: 200px;
+    height: 140px;
+  }
+
+  .contact-box {
+    flex-direction: row;
+  }
+
+  .contact-icon img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .contact-text p {
+    font-size: 12px;
+  }
+
+  .contact-text h4 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .contact-btn {
+    font-size: 13px;
+    border-radius: 25px;
+    width: 150px;
+  }
+
+  .media-badge {
+    width: 120px;
+    height: 120px;
+    left: 100px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 24px;
+  }
+
+  .media-badge {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* CONTACT BOX ZOOM EFFECTS */
+.contact-icon img,
+.contact-btn {
+  transition: transform 0.4s ease;
+}
+
+.contact-icon img:hover,
+.contact-btn:hover {
+  transform: scale(1.1);
+}

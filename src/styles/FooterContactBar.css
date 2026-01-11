@@ -1,0 +1,255 @@
+.footer-root {
+  background: linear-gradient(180deg, #1f2427, #181c1f);
+  color: #cfcfcf;
+  padding-top: 100px;
+  font-family: "Inter", sans-serif;
+}
+
+/* TOP BAR */
+.footer-topbar {
+  max-width: 1200px;
+  margin: auto;
+  background: #3b4043;
+  border-radius: 28px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.footer-logo-box {
+  background: linear-gradient(135deg, #d92814, #b91f0f);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-box img {
+  width: 140px;
+}
+
+.footer-contact-items {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px;
+}
+
+.footer-contact-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-icon {
+  width: 50px;
+  height: 50px;
+  background: #4b4f52;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.footer-contact-item:hover .footer-icon {
+  background: #d92814;
+  transform: translateY(-3px);
+}
+
+.footer-contact-item small {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.footer-contact-item p {
+  color: #fff;
+}
+
+/* MAIN */
+.footer-main {
+  max-width: 1200px;
+  margin: 90px auto 70px;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 55px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-col li:hover {
+  color: #d92814;
+  transform: translateX(5px);
+}
+
+.footer-col a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* DROPDOWN */
+.footer-dropdown {
+  margin: 8px 0 12px 12px;
+  padding-left: 10px;
+  border-left: 2px solid #333;
+}
+
+.footer-dropdown li {
+  font-size: 14px;
+}
+
+/* ICON ROTATE */
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+/* SOCIALS */
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  margin: 25px 0 35px;
+}
+
+.footer-socials span {
+  width: 40px;
+  height: 40px;
+  background: #2c3134;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.footer-socials span:hover {
+  background: #d92814;
+  transform: translateY(-4px);
+}
+
+/* SUBSCRIBE */
+.subscribe-box {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 30px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background: #2c3134;
+  color: #fff;
+}
+
+.subscribe-box button {
+  width: 48px;
+  height: 48px;
+  background: #d92814;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding: 25px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer-bottom span {
+  color: #d92814;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-bottom-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-topbar {
+    flex-direction: column;
+  }
+
+  .footer-contact-items {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin: 50px 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+}
+
+.footer-icon, .footer-logo-box, .footer-socials span, .subscribe-box button {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+.footer-logo-box img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.footer-socials span:hover {
+  transform: scale(1.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.subscribe-box button:hover {
+  transform: scale(1.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.footer-contact-item:hover .footer-icon {
+  background: #d92814;
+  transform: scale(1.15) translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+  --bu-accent: #d93b1c;
+  --bu-accent-light: #ff5c3a;
+  --bu-text-dark: #111;
+
+  --bu-radius-lg: 22px;
+  --bu-shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.18);
+  --bu-shadow-md: 0 12px 30px rgba(0, 0, 0, 0.14);
+  --bu-shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.08);
+  
+}
+
+/* ---------- PAGE ---------- */
+.bu-page {
+  font-family: Inter, sans-serif;
+  color: var(--bu-text-dark);
+  animation: buFadeSlow 0.6s ease;
+}
+
+@keyframes buFadeSlow {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- BLOG SECTION ---------- */
+.bu-blog-section {
+  max-width: 1180px;
+  margin: 80px auto 120px;
+  padding: 0 20px;
+  
+}
+
+.bu-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+/* ---------- BLOG CARD ---------- */
+.bu-blog-card {
+  background: #fff;
+  border-radius: var(--bu-radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--bu-shadow-sm);
+  transition: all 0.4s ease;
+}
+
+.bu-blog-card:hover {
+  box-shadow: var(--bu-shadow-lg);
+}
+
+/* ---------- IMAGE ---------- */
+.bu-blog-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.bu-blog-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.bu-blog-card:hover .bu-blog-image img {
+  transform: scale(1.15);
+}
+
+/* ---------- DATE ---------- */
+.bu-blog-date {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: var(--bu-accent);
+  color: #fff;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: var(--bu-shadow-md);
+}
+
+/* ---------- CONTENT ---------- */
+.bu-blog-content {
+  padding: 26px 24px 30px;
+}
+
+.bu-blog-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+/* ---------- READ MORE ---------- */
+.bu-read-more {
+  color: var(--bu-accent);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bu-arrow {
+  transition: transform 0.3s ease;
+}
+
+.bu-blog-card:hover .bu-arrow {
+  transform: translateX(6px);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .bu-blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .bu-blog-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,243 @@
+:root {
+  --accent: #d92814;
+  color: black;
+}
+
+/* ==========================
+   SUPPORT SECTION
+========================== */
+.su-section {
+  width: 90%;
+  margin: auto;
+  padding: 110px 0;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  color: black;
+}
+
+/* ---------- LEFT ---------- */
+.su-left {
+  width: 40%;
+}
+
+.su-image-stack {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  position: relative;
+}
+
+.su-image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+  will-change: transform;
+}
+
+.su-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.su-image-card:hover img {
+  transform: scale(1.15);
+}
+
+.su-tall {
+  width: 45%;
+  height: 520px;
+}
+
+.su-main {
+  width: 55%;
+  height: 480px;
+}
+
+/* ---------- BADGE ---------- */
+.su-badge {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: su-badgeSpin 18s linear infinite;
+  border: 2px solid var(--accent);
+}
+
+.su-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.su-badge:hover {
+  transform: translate(-50%, -50%) scale(1.12);
+  box-shadow: 0 28px 70px rgba(0,0,0,0.35);
+}
+
+/* ---------- RIGHT ---------- */
+.su-right {
+  width: 60%;
+}
+
+.su-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.su-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 22px;
+  color: black;
+}
+
+.su-title span {
+  color: var(--accent);
+}
+
+.su-desc {
+  font-size: 17px;
+  line-height: 1.75;
+  color: black;
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+/* ---------- FEATURES ---------- */
+.su-features {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 42px;
+}
+
+.su-feature {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.su-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 32px rgba(217,40,20,0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.su-icon i {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.su-feature:hover .su-icon {
+  transform: scale(1.12);
+  box-shadow: 0 22px 50px rgba(217,40,20,0.55);
+}
+
+.su-feature h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.su-feature p {
+  font-size: 15px;
+  color: black;
+}
+
+/* ---------- BUTTON ---------- */
+.su-btn {
+  padding: 15px 38px;
+  border-radius: 40px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 20px 45px rgba(217,40,20,0.45);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.su-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 30px 65px rgba(217,40,20,0.6);
+}
+
+.su-btn i {
+  font-size: 14px;
+  transition: transform 0.4s ease;
+}
+
+.su-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* ---------- BADGE SPIN ---------- */
+@keyframes su-badgeSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  .su-section {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .su-left,
+  .su-right {
+    width: 100%;
+  }
+
+  .su-tall,
+  .su-main {
+    height: 420px;
+  }
+
+  .su-title {
+    font-size: 34px;
+  }
+
+  .su-features {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .su-badge {
+    display: none;
+  }
+}

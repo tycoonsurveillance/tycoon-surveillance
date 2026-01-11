@@ -1,0 +1,265 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --accent: orange;
+  
+}
+
+.abt-page{
+
+  width: 100%;
+  padding: 100px 0;
+  overflow: hidden;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("../assets/background.png") center/cover no-repeat!important;
+  border-top: 2px solid orange;
+}
+/* ==========================
+   SUPPORT SECTION
+========================== */
+.sec-support {
+  width: 90%;
+  margin: auto;
+  padding: 110px 0;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  
+
+}
+
+/* ---------- LEFT (40%) ---------- */
+.sec-support-left {
+  width: 40%;
+}
+
+.sec-image-stack {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  position: relative;
+}
+
+.sec-image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+  will-change: transform;
+}
+
+.sec-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.sec-image-card:hover img {
+  transform: scale(1.15);
+}
+
+.sec-tall {
+  width: 45%;
+  height: 520px;
+  color: white;
+}
+
+.sec-main {
+  width: 55%;
+  height: 480px;
+  color: white;
+}
+
+/* ---------- BADGE ---------- */
+.sec-contact {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: sec-badgeSpin 18s linear infinite;
+  border: 2px solid var(--accent);
+  border: 2px solid orange;
+}
+
+.sec-contact img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.sec-contact:hover {
+  transform: translate(-50%, -50%) scale(1.12);
+  box-shadow: 0 28px 70px rgba(0,0,0,0.35);
+}
+
+/* ---------- RIGHT (60%) ---------- */
+.sec-support-right {
+  width: 60%;
+}
+
+.sec-support-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  color: white!important;
+}
+
+.sec-support-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 22px;
+  color: white;
+}
+
+.sec-support-title span {
+ color: orange!important;
+}
+
+.sec-support-desc {
+  font-size: 17px;
+  line-height: 1.75;
+ color: white!important;
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+/* ---------- FEATURES ---------- */
+.sec-support-features {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 42px;
+}
+
+.sec-support-feature {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.sec-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  min-height: 52px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 32px orange;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sec-icon i {
+  font-size: 20px;
+  line-height: 1;
+  
+}
+
+.sec-support-feature:hover .sec-icon {
+  transform: scale(1.12);
+  box-shadow: 0 22px 50px orange;
+  color: white!important;
+}
+
+.sec-support-feature h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: white!important;
+}
+
+.sec-support-feature p {
+  font-size: 15px;
+  color: white!important;
+}
+
+/* ---------- BUTTON ---------- */
+.sec-support-btn {
+  padding: 15px 38px;
+  border-radius: 40px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 20px 45px orange;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sec-support-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 30px 65px orange;
+}
+
+.sec-support-btn i {
+  font-size: 14px;
+  transition: transform 0.4s ease;
+}
+
+.sec-support-btn:hover i {
+  transform: translateX(4px);
+}
+
+/* ---------- BADGE SPIN ---------- */
+@keyframes sec-badgeSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  .sec-support {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .sec-support-left,
+  .sec-support-right {
+    width: 100%;
+  }
+
+  .sec-tall,
+  .sec-main {
+    height: 420px;
+  }
+
+  .sec-support-title {
+    font-size: 34px;
+  }
+
+  .sec-support-features {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .sec-contact{
+    width: 120px;
+  }
+}

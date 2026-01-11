@@ -1,0 +1,204 @@
+/* ================= HERO ================= */
+
+.hero2 {
+  margin-top: -170px;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.hero2-content {
+
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 160px;
+  position: relative;
+  z-index: 2;
+   color: white!important;
+}
+
+/* ================= TEXT ================= */
+
+.hero2-subtitle {
+    padding-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.9;
+   color: white!important;
+}
+
+.hero2-subtitle-icon {
+  color: orange;
+}
+
+.hero2-title {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 25px 0;
+   color: white!important;
+}
+
+.hero2-desc {
+  width: 48%;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 35px;
+   color: white!important;
+}
+
+/* ================= BUTTONS ================= */
+
+.hero2-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.hero2-start-btn {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero2-watch-btn {
+  
+  border: 5ps scroll orange;
+  border-radius: 20px;
+  background: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.hero2-play-icon {
+  color: orange;
+  font-size: 14px;
+}
+
+/* ================= FEATURES ================= */
+
+.hero2-features-box {
+  position: relative;
+  bottom: -90px;
+  width: 50%;
+  background: white;
+  color: #111;
+  border-radius: 32px;
+  padding: 42px 45px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.18);
+}
+
+.hero2-feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero2-feature-icon {
+  font-size: 34px;
+  color: orange;
+}
+
+.hero2-divider {
+  width: 1px;
+  height: 60px;
+  background: #e5e5e5;
+}
+
+/* ================= HOVER MOTION ================= */
+
+.hero2-hover {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.hero2-hover:hover {
+  transform: scale(1.06);
+}
+
+/* ================= SCROLL REVEAL ================= */
+
+.hero2-reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: 0.8s ease;
+}
+
+.hero2-reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .hero2-title {
+    font-size: 44px;
+  }
+
+  .hero2-desc {
+    width: 80%;
+  }
+
+  .hero2-features-box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero2-title {
+    font-size: 34px;
+  }
+
+  .hero2-desc {
+    width: 100%;
+  }
+
+  .hero2-btn-row {
+    flex-direction: row;
+  }
+
+  .hero2-features-box {
+    border: 2px solid orange;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+      bottom: -90px;
+  }
+
+  .hero2-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero2-title {
+    font-size: 28px;
+  }
+
+  .hero2-features-box {
+    padding: 26px 22px;
+  }
+}

@@ -1,0 +1,213 @@
+
+/* -----------------------
+   COMMITMENT SECTION
+------------------------*/
+.commit-section {
+  width: 90%;
+  padding: 110px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: auto;
+}
+
+.commit-left {
+  width: 50%;
+  display: grid;
+  grid-template-areas:
+    "small big"
+    "stat big";
+  gap: 22px;
+}
+
+.small-img {
+  grid-area: small;
+}
+
+.big-img {
+  grid-area: big;
+  height: 530px;
+  display: flex;
+}
+
+.big-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.small-img img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.commit-stat-box {
+  grid-area: stat;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 22px;
+  padding: 32px;
+  text-align: left;
+  box-shadow: 0 20px 45px rgba(217, 40, 20, 0.4);
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.commit-stat-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(217, 40, 20, 0.55);
+}
+
+.commit-stat-box h2 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.commit-stat-box p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* TEAM FACES IN STAT BOX - HORIZONTAL */
+.commit-stat-box .team-faces {
+  display: flex;
+  flex-direction: row; /* horizontal layout */
+  margin-top: 12px;
+  gap: 8px; /* spacing between faces */
+}
+
+.commit-stat-box .team-face {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  transition: transform 0.3s;
+}
+
+.commit-stat-box .team-face:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+/* GENERAL IMG STYLE */
+.commit-img img {
+  border-radius: 18px;
+  transition: 0.4s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.commit-img:hover img {
+  transform: scale(1.05);
+}
+
+.commit-right {
+  width: 50%;
+}
+
+.commit-tag {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.commit-title {
+  font-size: 46px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  line-height: 1.28;
+}
+
+.commit-title span {
+  color: var(--accent);
+}
+
+.commit-desc {
+  color: #666;
+  font-size: 17px;
+  margin-bottom: 35px;
+  line-height: 1.7;
+}
+
+.commit-stats-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 35px;
+}
+
+.commit-stat {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+.commit-stat span {
+  display: block;
+  font-size: 15px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.commit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.commit-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: #444;
+}
+
+.commit-list li i {
+  color: var(--accent);
+  margin-right: 12px;
+  font-size: 20px;
+}
+.p-home{
+  color: white;
+}
+/* Responsive */
+@media (max-width: 992px) {
+  .commit-section {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .commit-left,
+  .commit-right {
+    width: 100%;
+  }
+
+  .big-img {
+    height: 420px;
+  }
+
+  .commit-title {
+    font-size: 34px;
+  }
+
+  .commit-stats-row {
+    flex-wrap: wrap;
+  }
+
+  .commit-stat-box .team-faces {
+    gap: 6px;
+  }
+
+  .commit-stat-box .team-face {
+    width: 40px;
+    height: 40px;
+  }
+}

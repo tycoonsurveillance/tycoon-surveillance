@@ -1,0 +1,153 @@
+:root {
+  --primaryRed: orange;
+  --textDark: #111;
+  --textMuted: #555;
+}
+
+/* BACKGROUND */
+.faq1-gridBackground {
+  background: url('/mnt/data/803df054-4fa5-47fa-805f-c7f927f91909.png') repeat;
+  background-size: cover;
+  padding: 100px 0;
+  color: var(--textDark);
+}
+
+/* MAIN WRAPPER */
+.faq1-mainWrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.faq1-contentLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq1-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primaryRed);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.faq1-labelIcon {
+  width: 18px;
+  height: 18px;
+  background: var(--primaryRed);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq1-heading {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--textDark);
+}
+
+.faq1-heading span {
+  color: var(--primaryRed);
+}
+
+.faq1-paragraph {
+  color: var(--textDark);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.faq1-benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.faq1-benefits li {
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--textDark);
+}
+
+.faq1-benefits li::before {
+  content: "✔";
+  width: 18px;
+  height: 18px;
+  background: var(--primaryRed);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RIGHT CARD */
+.faq1-accordionCard {
+  background: #fff;
+  border-radius: 26px;
+  padding: 30px 34px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  color: var(--textDark);
+}
+
+.faq1-accordionItem {
+  border-bottom: 1px solid #eee;
+}
+
+.faq1-accordionItem:last-child {
+  border-bottom: none;
+}
+
+.faq1-accordionHeader {
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--textDark);
+}
+
+.faq1-toggleIcon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq1-toggleIcon.active {
+  transform: rotate(180deg);
+  color: var(--primaryRed);
+}
+
+.faq1-accordionBody {
+  padding-bottom: 18px;
+  color: var(--textMuted);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .faq1-mainWrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faq1-gridBackground {
+  background: url('/mnt/data/803df054-4fa5-47fa-805f-c7f927f91909.png') repeat;
+  background-size: auto; /* keep pattern small like the screenshot */
+  padding: 100px 0;
+  color: var(--textDark);
+}
+
+

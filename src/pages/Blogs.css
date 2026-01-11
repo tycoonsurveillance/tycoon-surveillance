@@ -1,0 +1,186 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+  --navbar-height: 110px;
+  --container-max: 1180px;
+
+  --accent: #d93b1c;
+  --accent-light: #ff5c3a;
+
+  --muted: #7a7a7a;
+  --text-light: #ccc;
+
+  --card-radius: 22px;
+  --pill-radius: 12px;
+
+  --shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.18);
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.14);
+  --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- PAGE BASE ---------- */
+.lvm-page {
+  font-family: Inter, sans-serif;
+  color: #111;
+  background: #fff;
+  animation: fadeSlow 0.6s ease;
+}
+
+@keyframes fadeSlow {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---------- BANNER ---------- */
+.lvm-banner {
+  height: 500px;
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("../assets/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-lg);
+  animation: fadeUp 0.9s ease;
+  margin-top: -180px;
+}
+
+.lvm-banner-title {
+  font-size: 38px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+  animation: fadeIn 1.2s ease;
+  padding-top: 100px;
+}
+
+
+/* ---------- BLOG SECTION ---------- */
+.blog-section {
+  max-width: var(--container-max);
+  margin: 80px auto 120px;
+  padding: 0 20px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+/* ---------- BLOG CARD ---------- */
+.blog-card {
+  background: #fff;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s ease;
+}
+
+.blog-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ---------- IMAGE ---------- */
+.blog-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.blog-card:hover .blog-img img {
+  transform: scale(1.15);
+}
+
+/* ---------- DATE BADGE ---------- */
+.blog-date {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: var(--accent);
+  color: #fff;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: var(--shadow-md);
+}
+
+/* ---------- CONTENT ---------- */
+.blog-content {
+  padding: 26px 24px 30px;
+}
+
+.blog-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 18px;
+}
+
+/* ---------- READ MORE ---------- */
+.read-more {
+  color: var(--accent);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.read-more .arrow {
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .arrow {
+  transform: translateX(6px);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.load-more-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background: var(--accent-light);
+  transform: translateX(6px);
+}
