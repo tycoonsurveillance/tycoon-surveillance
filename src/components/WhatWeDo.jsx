@@ -1,6 +1,6 @@
 // WhatWeDo.jsx
 import React from "react";
-import "../styles/whatwedo.css";
+import "./whatwedo.css";
 import { motion } from "framer-motion";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaUsers, FaVideo } from "react-icons/fa";
