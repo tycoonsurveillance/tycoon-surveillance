@@ -9,7 +9,7 @@
 .about {
   padding: 100px 0;
   background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url("../assets/background.png") center/cover no-repeat;
+    url("/public/contact-bg.jpg") center/cover no-repeat;
   border-top: 2px solid orange;
   color: white;
 }

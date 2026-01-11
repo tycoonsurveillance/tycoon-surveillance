@@ -11,7 +11,7 @@
   overflow: hidden;
   flex-wrap: wrap;
    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("../assets/background.png") center/cover no-repeat!important;
+    url("/public/contact-bg.jpg") center/cover no-repeat!important;
     border-top: 2px solid orange;
 }
 

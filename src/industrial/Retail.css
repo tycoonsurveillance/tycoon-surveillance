@@ -39,7 +39,7 @@ p { font-size: 14.5px; line-height: 1.7; color: var(--gray); }
 /* HERO */
 .retail-page-hero {
   height: 450px;
-  background: url("../assets/hero-bg.jpg") center / cover no-repeat;
+  background: url("/public/contact-bg.jpg") center / cover no-repeat;
   display: grid;
   place-items: center;
   text-align: center;
