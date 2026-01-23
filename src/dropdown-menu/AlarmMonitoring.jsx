@@ -103,7 +103,7 @@ const AlarmMonitoring = () => {
               </div>
             </div>
 
-            
+
           </div>
         </aside>
 
@@ -117,10 +117,10 @@ const AlarmMonitoring = () => {
 
             <div className="hero-text">
               <p>
-            A reliable alarm monitoring service is key to keeping homes, businesses, and public spaces safe. A good system provides continuous monitoring, helps prevent threats, and keeps people and property secure.</p>
+                A reliable alarm monitoring service is key to keeping homes, businesses, and public spaces safe. A good system provides continuous monitoring, helps prevent threats, and keeps people and property secure.</p>
               <br />
               <p>
-            A complete fire alarm monitoring system not only helps prevent emergencies but also sends instant alerts and records activity to support quick responses. Businesses can better protect employees and assets, while homeowners can feel confident that their family and property are always monitored. Whether for homes, offices, or industrial sites, professional alarm monitoring services provide proactive protection and reliable security.</p>
+                A complete fire alarm monitoring system not only helps prevent emergencies but also sends instant alerts and records activity to support quick responses. Businesses can better protect employees and assets, while homeowners can feel confident that their family and property are always monitored. Whether for homes, offices, or industrial sites, professional alarm monitoring services provide proactive protection and reliable security.</p>
             </div>
           </div>
 
@@ -129,7 +129,7 @@ const AlarmMonitoring = () => {
             <h2>Why Choose Professional Alarm Monitoring</h2>
 
             <p>
-           Professional alarm monitoring services deliver continuous protection for homes, offices, and commercial properties. By leveraging modern alarm systems and fire alarm monitoring solutions, clients benefit from real-time alerts, rapid response capabilities, and detailed monitoring logs. With strategic system placement, seamless integration, and ongoing supervision, this service provides a dependable solution for enhanced safety, control, and peace of mind. </p>
+              Professional alarm monitoring services deliver continuous protection for homes, offices, and commercial properties. By leveraging modern alarm systems and fire alarm monitoring solutions, clients benefit from real-time alerts, rapid response capabilities, and detailed monitoring logs. With strategic system placement, seamless integration, and ongoing supervision, this service provides a dependable solution for enhanced safety, control, and peace of mind. </p>
 
             <div className="info-lists">
               <ul>
@@ -146,7 +146,7 @@ const AlarmMonitoring = () => {
             </div>
 
             <div className="info-img-wrapper">
-              <img src={sectionImg} className="info-image" alt="Security Operator" />
+              <img src={sectionImg} className="info-image" alt="Security Operator" loading="lazy" />
             </div>
           </section>
 
@@ -154,10 +154,10 @@ const AlarmMonitoring = () => {
           <section className="lvm-adv-section">
             <div className="adv-header">
               <h2 className="adv-title">
-                 <span> Why We Are a Leading </span> Alarm Monitoring Company
+                <span> Why We Are a Leading </span> Alarm Monitoring Company
               </h2>
               <p className="adv-desc">
-              Tycoon Guards is known for delivering some of the most dependable alarm monitoring services in Texas, trusted by homeowners, businesses, and commercial properties statewide. Our skilled team provides professional and cost-effective surveillance monitoring, including fire alarm monitoring as well as residential and commercial alarm system oversight. With an emphasis on accuracy, continuous supervision, and customized solutions, we offer a comprehensive alarm security monitoring service that ensures safety, peace of mind, and reliable protection for every client.</p>
+                Tycoon Guards is known for delivering some of the most dependable alarm monitoring services in Texas, trusted by homeowners, businesses, and commercial properties statewide. Our skilled team provides professional and cost-effective surveillance monitoring, including fire alarm monitoring as well as residential and commercial alarm system oversight. With an emphasis on accuracy, continuous supervision, and customized solutions, we offer a comprehensive alarm security monitoring service that ensures safety, peace of mind, and reliable protection for every client.</p>
             </div>
 
             <div className="adv-left">
@@ -189,7 +189,7 @@ const AlarmMonitoring = () => {
             </div>
 
             <div className="adv-right">
-              <img src={advImg} alt="surveillance" className="adv-image" />
+              <img src={advImg} alt="surveillance" className="adv-image" loading="lazy" />
             </div>
           </section>
 
@@ -200,7 +200,7 @@ const AlarmMonitoring = () => {
             </h2>
 
             <p className="strategy-desc">
-            Stay informed with advanced monitoring designed to keep your property safe. Our approach ensures continuous observation, timely alerts, and proactive prevention of potential risks.
+              Stay informed with advanced monitoring designed to keep your property safe. Our approach ensures continuous observation, timely alerts, and proactive prevention of potential risks.
             </p>
 
             {/* Cards */}
@@ -209,7 +209,7 @@ const AlarmMonitoring = () => {
                 <div className="strategy-icon"><RiAlertLine /></div>
                 <h3>Monitoring Challenges</h3>
                 <p>
-                We address coverage gaps and potential vulnerabilities to provide thorough and reliable protection.
+                  We address coverage gaps and potential vulnerabilities to provide thorough and reliable protection.
                 </p>
               </div>
 
@@ -217,7 +217,7 @@ const AlarmMonitoring = () => {
                 <div className="strategy-icon"><GiShield /></div>
                 <h3>Security Strategy</h3>
                 <p>
-                A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.
+                  A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.
                 </p>
               </div>
             </div>

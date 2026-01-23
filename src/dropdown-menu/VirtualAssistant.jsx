@@ -104,7 +104,7 @@ const VirtualAssistant = () => {
               </div>
             </div>
 
-            
+
           </div>
         </aside>
 
@@ -118,10 +118,10 @@ const VirtualAssistant = () => {
 
             <div className="hero-text">
               <p>
-            Virtual assistant services are increasingly important for small businesses seeking to save time, optimize operations, and remain competitive. A proficient virtual assistant can manage routine tasks such as administrative support, email management, scheduling, and customer service, allowing business owners to focus on growth and strategic priorities. With dependable assistance, businesses improve efficiency, boost productivity, and gain peace of mind.  </p>
+                Virtual assistant services are increasingly important for small businesses seeking to save time, optimize operations, and remain competitive. A proficient virtual assistant can manage routine tasks such as administrative support, email management, scheduling, and customer service, allowing business owners to focus on growth and strategic priorities. With dependable assistance, businesses improve efficiency, boost productivity, and gain peace of mind.  </p>
               <br />
               <p>
-             Partnering with a Texas-based virtual assistant service offers both local expertise and cost-effective solutions. From customer service support to professional virtual assistant services, businesses receive customized solutions tailored to their needs. Whether you’re looking for online virtual assistant services in Texas or top-quality virtual assistant support, outsourcing is a smart way to enhance efficiency and achieve long-term success. </p>
+                Partnering with a Texas-based virtual assistant service offers both local expertise and cost-effective solutions. From customer service support to professional virtual assistant services, businesses receive customized solutions tailored to their needs. Whether you’re looking for online virtual assistant services in Texas or top-quality virtual assistant support, outsourcing is a smart way to enhance efficiency and achieve long-term success. </p>
             </div>
           </div>
 
@@ -130,7 +130,7 @@ const VirtualAssistant = () => {
             <h2>Why We Are Among the Top Virtual Assistant Services in Texas</h2>
 
             <p>
-          Tycoon Serveillance is recognized for delivering top virtual assistant services in Texas, trusted by entrepreneurs and small businesses statewide. Our experienced team provides reliable, cost-effective support, handling everything from business administration to customer service. With an emphasis on professionalism and flexibility, we offer customized solutions that help businesses grow and succeed.  </p>
+              Tycoon Serveillance is recognized for delivering top virtual assistant services in Texas, trusted by entrepreneurs and small businesses statewide. Our experienced team provides reliable, cost-effective support, handling everything from business administration to customer service. With an emphasis on professionalism and flexibility, we offer customized solutions that help businesses grow and succeed.  </p>
 
             <div className="info-lists">
               <ul>
@@ -147,7 +147,7 @@ const VirtualAssistant = () => {
             </div>
 
             <div className="info-img-wrapper">
-              <img src={sectionImg} className="info-image" alt="Security Operator" />
+              <img src={sectionImg} className="info-image" alt="Security Operator" loading="lazy" />
             </div>
           </section>
 
@@ -155,10 +155,10 @@ const VirtualAssistant = () => {
           <section className="lvm-adv-section">
             <div className="adv-header">
               <h2 className="adv-title">
-                 <span>Tailored Virtual </span> Assistant Solutions for Every Business
+                <span>Tailored Virtual </span> Assistant Solutions for Every Business
               </h2>
               <p className="adv-desc">
-             Enhance productivity and streamline your business operations with our specialized Virtual Assistant services. Designed for busy entrepreneurs and growing businesses, we offer a variety of administrative support, including calendar management, email handling, data entry, and customer service. Recognizing that every business has unique requirements, we collaborate closely with you to create tailored solutions that align with your goals. By entrusting these time-consuming tasks to our skilled Virtual Assistants, you can focus on strategic initiatives, creative projects, and other critical areas that drive your business forward. </p>
+                Enhance productivity and streamline your business operations with our specialized Virtual Assistant services. Designed for busy entrepreneurs and growing businesses, we offer a variety of administrative support, including calendar management, email handling, data entry, and customer service. Recognizing that every business has unique requirements, we collaborate closely with you to create tailored solutions that align with your goals. By entrusting these time-consuming tasks to our skilled Virtual Assistants, you can focus on strategic initiatives, creative projects, and other critical areas that drive your business forward. </p>
             </div>
 
             <div className="adv-left">
@@ -190,7 +190,7 @@ const VirtualAssistant = () => {
             </div>
 
             <div className="adv-right">
-              <img src={advImg} alt="surveillance" className="adv-image" />
+              <img src={advImg} alt="surveillance" className="adv-image" loading="lazy" />
             </div>
           </section>
 
@@ -201,7 +201,7 @@ const VirtualAssistant = () => {
             </h2>
 
             <p className="strategy-desc">
-             Stay informed with advanced monitoring designed to keep your property safe. Our approach ensures continuous observation, timely alerts, and proactive prevention of potential risks. </p>
+              Stay informed with advanced monitoring designed to keep your property safe. Our approach ensures continuous observation, timely alerts, and proactive prevention of potential risks. </p>
 
             {/* Cards */}
             <div className="strategy-card-grid">
@@ -217,7 +217,7 @@ const VirtualAssistant = () => {
                 <div className="strategy-icon"><GiShield /></div>
                 <h3>Security Strategy</h3>
                 <p>
-                 A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.
+                  A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.
                 </p>
               </div>
             </div>

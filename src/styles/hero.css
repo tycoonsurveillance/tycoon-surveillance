@@ -20,13 +20,13 @@
   padding-top: 160px;
   position: relative;
   z-index: 2;
-   color: white!important;
+  color: white !important;
 }
 
 /* ================= TEXT ================= */
 
 .hero2-subtitle {
-    padding-top: 100px;
+  padding-top: 100px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -34,7 +34,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   opacity: 0.9;
-   color: white!important;
+  color: white !important;
 }
 
 .hero2-subtitle-icon {
@@ -42,11 +42,11 @@
 }
 
 .hero2-title {
-  font-size: 56px;
+  font-size: clamp(2.5rem, 5vw, 56px);
   font-weight: 800;
   line-height: 1.15;
   margin: 25px 0;
-   color: white!important;
+  color: white !important;
 }
 
 .hero2-desc {
@@ -54,7 +54,7 @@
   line-height: 1.7;
   opacity: 0.9;
   margin-bottom: 35px;
-   color: white!important;
+  color: white !important;
 }
 
 /* ================= BUTTONS ================= */
@@ -76,8 +76,8 @@
 }
 
 .hero2-watch-btn {
-  
-  border: 5ps scroll orange;
+
+  border: 2px solid orange;
   border-radius: 20px;
   background: none;
   color: white;
@@ -170,26 +170,55 @@
 @media (max-width: 768px) {
   .hero2-title {
     font-size: 34px;
+    text-align: center;
+  }
+
+  .hero2-subtitle {
+    justify-content: center;
+    padding-top: 50px;
+    /* Reduced padding */
   }
 
   .hero2-desc {
     width: 100%;
+    text-align: center;
+    font-size: 15px;
   }
 
   .hero2-btn-row {
-    flex-direction: row;
+    flex-direction: column;
+    /* Stack buttons on mobile */
+    justify-content: center;
+    width: 100%;
   }
 
+  .hero2-start-btn,
+  .hero2-watch-btn {
+    width: 100%;
+    /* Full width buttons */
+    justify-content: center;
+  }
+
+  /* Reset the overlapping feature box for mobile flow */
   .hero2-features-box {
     border: 2px solid orange;
     position: relative;
     width: 100%;
-    flex-direction: row;
-      bottom: -90px;
+    flex-direction: column;
+    bottom: auto;
+    /* Remove negative positioning */
+    margin-top: 40px;
+    gap: 30px;
   }
 
   .hero2-divider {
     display: none;
+    /* Hide vertical divider on mobile */
+    /* Add horizontal divider if needed, or just rely on gap */
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+    display: block;
   }
 }
 
@@ -199,6 +228,10 @@
   }
 
   .hero2-features-box {
-    padding: 26px 22px;
+    padding: 26px 20px;
+  }
+
+  .hero2-content {
+    padding-top: 100px;
   }
 }

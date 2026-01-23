@@ -94,18 +94,18 @@ const LiveVideoMonitoring = () => {
               <div className="contact-rows">
                 <a className="contact-row" href="mailto:info@tycoonguards.com">
                   <span className="row-icon"><AiOutlineMail /></span>
-                  <span>info@tycoonguards.com</span>
+                  <span>tycoonsurveillance@gmail.com</span>
                 </a>
 
                 <a className="contact-row" href="tel:+12816023421">
                   <span className="row-icon"><AiOutlinePhone /></span>
-                  <span>+(1) 281 602 3421</span>
+                  <span>+923150289316</span>
                 </a>
               </div>
             </div>
 
             {/* FIRST FAQ SECTION */}
-                      </div>
+          </div>
         </aside>
 
         {/* Main Content */}
@@ -118,10 +118,10 @@ const LiveVideoMonitoring = () => {
 
             <div className="hero-text">
               <p>
-              Protect your property with live video security that helps stop problems before they get worse. Our trained security team watches your location 24/7 using real-time video. They quickly spot suspicious activity and take action right away to prevent damage or loss. </p>
+                Protect your property with live video security that helps stop problems before they get worse. Our trained security team watches your location 24/7 using real-time video. They quickly spot suspicious activity and take action right away to prevent damage or loss. </p>
               <br />
               <p>
-               As a trusted live video monitoring company, we offer security checked by real people, not just alarms. Our team responds quickly, watches your property all the time, and provides strong, reliable protection. This gives you peace of mind and security you can count on. </p>
+                As a trusted live video monitoring company, we offer security checked by real people, not just alarms. Our team responds quickly, watches your property all the time, and provides strong, reliable protection. This gives you peace of mind and security you can count on. </p>
             </div>
           </div>
 
@@ -130,10 +130,10 @@ const LiveVideoMonitoring = () => {
             <h2>Comprehensive Video Surveillance Technology</h2>
 
             <p>
-            Our security project delivers cutting-edge live video monitoring and surveillance solutions specifically designed for both residential and commercial properties. We provide comprehensive systems featuring high definition cameras, intelligent motion detection capabilities, and convenient remote access from any location. Every component works together seamlessly to give you complete visibility and control over your property’s security at all times.
-            <br />
-            We focus on placing cameras in the right locations, connecting systems smoothly, and monitoring them live at all times. This creates a strong security setup made for your needs. It gives full coverage, better control, and peace of mind. With professional technology and constant monitoring, your property stays protected 24/7 when it matters most.
-             </p>
+              Our security project delivers cutting-edge live video monitoring and surveillance solutions specifically designed for both residential and commercial properties. We provide comprehensive systems featuring high definition cameras, intelligent motion detection capabilities, and convenient remote access from any location. Every component works together seamlessly to give you complete visibility and control over your property’s security at all times.
+              <br />
+              We focus on placing cameras in the right locations, connecting systems smoothly, and monitoring them live at all times. This creates a strong security setup made for your needs. It gives full coverage, better control, and peace of mind. With professional technology and constant monitoring, your property stays protected 24/7 when it matters most.
+            </p>
 
             <div className="info-lists">
               <ul>
@@ -150,7 +150,7 @@ const LiveVideoMonitoring = () => {
             </div>
 
             <div className="info-img-wrapper">
-              <img src={sectionImg} className="info-image" alt="Security Operator" />
+              <img src={sectionImg} className="info-image" alt="Security Operator" loading="lazy" />
             </div>
           </section>
 
@@ -158,12 +158,12 @@ const LiveVideoMonitoring = () => {
           <section className="lvm-adv-section">
             <div className="adv-header">
               <h2 className="adv-title">
-                 <span> Get Started with</span> Professional Live Video Monitoring             </h2>
+                <span> Get Started with</span> Professional Live Video Monitoring             </h2>
               <p className="adv-desc">
-             Protecting your property doesn’t have to be hard or costly. Our team makes everything easy, from the first inspection to system design, installation, and 24/7 <br />
+                Protecting your property doesn’t have to be hard or costly. Our team makes everything easy, from the first inspection to system design, installation, and 24/7 <br />
 
-Every property is different. That’s why we start by checking your location to understand risks, budget, and security needs. We then create a custom solution made just for you, without extra features you don’t need.<br />
-<br /> <b>Want better security?</b> Contact us today for a free consultation. Our experts will review your property, answer your questions, and show you how live monitoring can protect what matters most.  </p>
+                Every property is different. That’s why we start by checking your location to understand risks, budget, and security needs. We then create a custom solution made just for you, without extra features you don’t need.<br />
+                <br /> <b>Want better security?</b> Contact us today for a free consultation. Our experts will review your property, answer your questions, and show you how live monitoring can protect what matters most.  </p>
             </div>
 
             <div className="adv-left">
@@ -195,7 +195,7 @@ Every property is different. That’s why we start by checking your location to 
             </div>
 
             <div className="adv-right">
-              <img src={advImg} alt="surveillance" className="adv-image" />
+              <img src={advImg} alt="surveillance" className="adv-image" loading="lazy" />
             </div>
           </section>
 
@@ -206,9 +206,9 @@ Every property is different. That’s why we start by checking your location to 
             </h2>
 
             <p className="strategy-desc">
-           Our live video monitoring system uses high-quality technology built for serious security needs. High-definition cameras with night vision provide clear video in all lighting conditions. Footage is safely stored in the cloud and can be accessed quickly from any approved device. <br />
+              Our live video monitoring system uses high-quality technology built for serious security needs. High-definition cameras with night vision provide clear video in all lighting conditions. Footage is safely stored in the cloud and can be accessed quickly from any approved device. <br />
 
-You can add as many cameras as you need as your business grows. With mobile apps, you can watch live video on your phone or tablet anytime, from anywhere.
+              You can add as many cameras as you need as your business grows. With mobile apps, you can watch live video on your phone or tablet anytime, from anywhere.
             </p>
 
             {/* Cards */}
@@ -217,7 +217,7 @@ You can add as many cameras as you need as your business grows. With mobile apps
                 <div className="strategy-icon"><RiAlertLine /></div>
                 <h3>Proactive Crime Prevention </h3>
                 <p>
-               Traditional security cameras only capture evidence after crimes occur. Our approach stops criminal activity before it starts. When would-be intruders realize they're being actively watched, they typically abandon their plans immediately. This proactive deterrence is the most effective form of property protection.
+                  Traditional security cameras only capture evidence after crimes occur. Our approach stops criminal activity before it starts. When would-be intruders realize they're being actively watched, they typically abandon their plans immediately. This proactive deterrence is the most effective form of property protection.
                 </p>
               </div>
 
@@ -225,7 +225,7 @@ You can add as many cameras as you need as your business grows. With mobile apps
                 <div className="strategy-icon"><GiShield /></div>
                 <h3>Peace of Mind</h3>
                 <p>
-                Security concerns create stress that impacts your focus and productivity. Knowing professionals are watching your property 24/7 provides invaluable peace of mind. Sleep better knowing that threats will be detected and handled immediately, even when you're unavailable.
+                  Security concerns create stress that impacts your focus and productivity. Knowing professionals are watching your property 24/7 provides invaluable peace of mind. Sleep better knowing that threats will be detected and handled immediately, even when you're unavailable.
 
 
                 </p>

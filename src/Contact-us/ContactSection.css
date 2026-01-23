@@ -8,8 +8,8 @@
 
 :root {
   --accent: #d91e18;
-  --shadow-lg: 0 18px 44px rgba(0,0,0,0.18);
-  --shadow-md: 0 12px 30px rgba(0,0,0,0.14);
+  --shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.18);
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.14);
 }
 
 /* WRAPPER */
@@ -21,14 +21,18 @@
 
 /* HERO */
 .cp-hero {
-  height: 420px;
+  height: 60vh;
+  min-height: 500px;
   width: 100%;
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url("/public/contact-bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/contact-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -160px;
+  margin-top: -170px;
+  /* Pull behind navbar */
+  padding-top: 140px;
+  /* Space for content */
 }
 
 .cp-hero-title {
@@ -50,7 +54,7 @@
 /* TOP */
 .cp-top {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 60px;
   align-items: center;
 }
@@ -97,7 +101,7 @@
 /* CARDS */
 .cp-right {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
 
@@ -133,7 +137,7 @@
 /* BOTTOM */
 .cp-bottom {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 60px;
   margin-top: 90px;
 }
@@ -191,6 +195,7 @@
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
+
   .cp-top,
   .cp-bottom {
     grid-template-columns: 1fr;

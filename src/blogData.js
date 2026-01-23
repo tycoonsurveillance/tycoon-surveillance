@@ -45,20 +45,20 @@ export const blogData = [
     date: "25 Nov",
     route: "/blogs/virtual-assistant-services",
   },
-  {
+    {
     title: "Protecting Your Site: The Complete Guide to Construction Video Surveillance and Theft Prevention",
     image: seven,
     date: "18 Nov",
     route: "/blogs/Transform-Your-Business-Security",
-  }, {
+  },  {
     title: "Is Your Business at Risk? Why You Need a Custom Video Surveillance System",
     image: eight,
     date: "13 Nov",
     route: "/blogs/Why-Security-Cameras-Video-Surveillance",
-  }, {
+  },  {
     title: "Protecting Your Site: The Complete Guide to Construction Video Surveillance and Theft Prevention",
     image: nine,
     date: "8 Nov",
-    route: "/blogs/Smarter-Security-Through",
+    route: "/blogs/Smarter-Security-Through ",
   },
 ];

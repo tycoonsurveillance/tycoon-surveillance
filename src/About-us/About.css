@@ -7,32 +7,43 @@
 
 /* ---------- PAGE BASE ---------- */
 .lvm-page {
-  font-family: Inter, sans-serif;
-  color: #111;
+  width: 100%;
   background: #fff;
-  animation: fadeSlow 0.6s ease;
+  color: #111;
 }
-.lvm-sidebar{
-   position: sticky;
+
+.lvm-sidebar {
+  position: sticky;
   top: 40px;
   height: fit-content;
 }
 
 
 @keyframes fadeSlow {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: none; }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* ---------- BANNER ---------- */
 .lvm-banner {
-  height: 400px;
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("/public/contact-bg.jpg") center/cover no-repeat;
+  height: 60vh;
+  min-height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/contact-bg.jpg") center/cover no-repeat;
+
+
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 28px;
+  margin-top: -170px;
   box-shadow: var(--shadow-lg);
   animation: fadeUp 0.9s ease;
 }
@@ -43,7 +54,7 @@
   color: #fff;
   letter-spacing: 1px;
   animation: fadeIn 1.2s ease;
-  padding-top: 100px;
+  padding-top: 140px;
 }
 
 
@@ -72,7 +83,7 @@
 .a7-img {
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0,.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .2);
 }
 
 .a7-img img {
@@ -187,22 +198,27 @@
 }
 
 .a22-text p {
-    color: white!important;
-  }
+  color: white !important;
+}
 
-  .a22-text h4 {
-color: white;
-    
-  }
+.a22-text h4 {
+  color: white;
 
-  .a23-btn {
- color: black;
- background-color: white;
-  }
+}
+
+.a23-btn {
+  color: black;
+  background-color: white;
+}
 
 @keyframes spin {
-  from { transform: translateX(-50%) rotate(0); }
-  to { transform: translateX(-50%) rotate(360deg); }
+  from {
+    transform: translateX(-50%) rotate(0);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
 }
 
 /* RESPONSIVE */
@@ -210,9 +226,11 @@ color: white;
   .a5-wrapper {
     flex-direction: column;
   }
-  .a14-label{
+
+  .a14-label {
     margin-top: 50px;
   }
+
   .a6-media,
   .a13-info {
     width: 100%;
@@ -256,13 +274,13 @@ color: white;
 
   .a22-text p {
     font-size: 12px;
-    color: white!important;
+    color: white !important;
   }
 
   .a22-text h4 {
     font-size: 15px;
     font-weight: 700;
-    
+
   }
 
   .a23-btn {
@@ -280,10 +298,21 @@ color: white;
 @media (max-width: 480px) {
   .a15-heading {
     font-size: 24px;
+    line-height: 1.3;
   }
 
   .a11-badge {
     width: 100px;
+  }
+
+  .lvm-banner-title {
+    font-size: 28px;
+    padding-top: 80px;
+  }
+
+  .lvm-banner {
+    height: 50vh;
+    min-height: 400px;
   }
 }
 

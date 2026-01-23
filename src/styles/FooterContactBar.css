@@ -13,7 +13,7 @@
   border-radius: 28px;
   display: flex;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .footer-logo-box {
@@ -196,60 +196,101 @@
 }
 
 /* RESPONSIVE */
+@media (max-width: 992px) {
+  .footer-main {
+    grid-template-columns: 2fr 1fr 1fr;
+    /* 3 columns on tablet */
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .footer-topbar {
+    margin: 0 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-topbar {
     flex-direction: column;
+    margin: 0 15px;
+    border-radius: 20px;
+  }
+
+  .footer-logo-box {
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
   }
 
   .footer-contact-items {
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     align-items: flex-start;
+    padding: 30px;
+    width: 100%;
   }
 
   .footer-main {
     grid-template-columns: 1fr;
-    gap: 35px;
-    margin: 50px 15px;
+    /* Single column on mobile */
+    gap: 40px;
+    margin: 60px 20px;
+    text-align: center;
   }
+
+  .footer-col li {
+    justify-content: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  /* Make dropdown arrow align properly in center text mode if needed, 
+     or keep left aligned if preferred. Center aligns usually look better on mobile footer. */
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 20px;
+    padding-bottom: 30px;
   }
 
   .footer-bottom-links {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
-.footer-icon, .footer-logo-box, .footer-socials span, .subscribe-box button {
+.footer-icon,
+.footer-logo-box,
+.footer-socials span,
+.subscribe-box button {
   transition: all 0.3s ease-in-out;
 }
 
 .footer-icon:hover {
   transform: scale(1.15);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
 }
 
 .footer-logo-box img:hover {
   transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .footer-socials span:hover {
   transform: scale(1.2);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .subscribe-box button:hover {
   transform: scale(1.15);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .footer-contact-item:hover .footer-icon {
   background: #d92814;
   transform: scale(1.15) translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }

@@ -121,7 +121,7 @@ const Retail = () => {
               Installing a retail video surveillance system is important for keeping stores, staff, and customers safe. A well-placed system provides continuous monitoring, prevents theft, and creates a secure shopping environment.
             </p>
             <p>
-             A good retail surveillance system not only helps stop shoplifting but also provides clear recorded footage for investigations. Store owners can protect their property and employees, while retailers can reduce losses. Whether it’s a small convenience store or a large retail chain, professional video surveillance solutions help ensure safety and protect your business.
+              A good retail surveillance system not only helps stop shoplifting but also provides clear recorded footage for investigations. Store owners can protect their property and employees, while retailers can reduce losses. Whether it’s a small convenience store or a large retail chain, professional video surveillance solutions help ensure safety and protect your business.
             </p>
           </section>
 
@@ -177,78 +177,78 @@ const Retail = () => {
           </section>
 
           {/* SUPERIOR PROTECTION */}
-         <section className="retail-page-superior-section">
-  <div className="retail-page-superior-img">
-    <img src={sectionImg} alt="Superior protection" />
-  </div>
+          <section className="retail-page-superior-section">
+            <div className="retail-page-superior-img">
+              <img src={sectionImg} alt="Superior protection" loading="lazy" />
+            </div>
 
-  <div className="retail-page-superior-content">
-    <h2>
-      Superior <span>protection</span>
-    </h2>
+            <div className="retail-page-superior-content">
+              <h2>
+                Superior <span>protection</span>
+              </h2>
 
-    <p>
-      Our comprehensive retail video surveillance solutions are designed to
-      meet the unique needs of retail stores, convenience shops, and shopping
-      centers. From retail video surveillance systems to 24/7 in-store
-      surveillance solutions, we help prevent theft, monitor activities, and
-      ensure a secure shopping environment.
-    </p>
+              <p>
+                Our comprehensive retail video surveillance solutions are designed to
+                meet the unique needs of retail stores, convenience shops, and shopping
+                centers. From retail video surveillance systems to 24/7 in-store
+                surveillance solutions, we help prevent theft, monitor activities, and
+                ensure a secure shopping environment.
+              </p>
 
-    <ul>
-      <li>
-        <FaCheckCircle />
-        <span>Advanced surveillance systems to protect your business.</span>
-      </li>
-      <li>
-        <FaCheckCircle />
-        <span>Committed to innovation, reliability, and peace of mind.</span>
-      </li>
-    </ul>
+              <ul>
+                <li>
+                  <FaCheckCircle />
+                  <span>Advanced surveillance systems to protect your business.</span>
+                </li>
+                <li>
+                  <FaCheckCircle />
+                  <span>Committed to innovation, reliability, and peace of mind.</span>
+                </li>
+              </ul>
 
-    <div className="retail-page-highlight-box">
-      <div className="icon">
-        <FaShieldAlt />
-      </div>
-      <span>
-        Experience unmatched protection with our retail security services
-        Texas.
-      </span>
-    </div>
-  </div>
-</section>
+              <div className="retail-page-highlight-box">
+                <div className="icon">
+                  <FaShieldAlt />
+                </div>
+                <span>
+                  Experience unmatched protection with our retail security services
+                  Texas.
+                </span>
+              </div>
+            </div>
+          </section>
 
           {/* ENHANCED SECURITY */}
-   {/* ENHANCED SECURITY */}
-<section className="enhanced-security-section">
-  <h2>
-    Enhanced <span>security</span>
-  </h2>
+          {/* ENHANCED SECURITY */}
+          <section className="enhanced-security-section">
+            <h2>
+              Enhanced <span>security</span>
+            </h2>
 
-  <div className="enhanced-steps">
-    {[1, 2, 3].map((num) => (
-      <div key={num} className="enhanced-step-item">
-        <span>{num}</span>
-        <div className="step-content">
-          <h4>
-            {num === 1
-              ? "Smart Monitoring"
-              : num === 2
-              ? "Reliable Protection"
-              : "Seamless Integration"}
-          </h4>
-          <p>
-            {num === 1
-              ? "Stay connected with real-time surveillance and remote access, ensuring 24/7 protection for your home, business, or industrial property."
-              : num === 2
-              ? "Our advanced security systems are built for durability and efficiency, providing long-term safety, peace of mind, and trusted performance."
-              : "Easily integrate our security solutions with your existing setup for a smooth, hassle-free, and comprehensive protection system."}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
+            <div className="enhanced-steps">
+              {[1, 2, 3].map((num) => (
+                <div key={num} className="enhanced-step-item">
+                  <span>{num}</span>
+                  <div className="step-content">
+                    <h4>
+                      {num === 1
+                        ? "Smart Monitoring"
+                        : num === 2
+                          ? "Reliable Protection"
+                          : "Seamless Integration"}
+                    </h4>
+                    <p>
+                      {num === 1
+                        ? "Stay connected with real-time surveillance and remote access, ensuring 24/7 protection for your home, business, or industrial property."
+                        : num === 2
+                          ? "Our advanced security systems are built for durability and efficiency, providing long-term safety, peace of mind, and trusted performance."
+                          : "Easily integrate our security solutions with your existing setup for a smooth, hassle-free, and comprehensive protection system."}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
 
 
           {/* FAQ */}

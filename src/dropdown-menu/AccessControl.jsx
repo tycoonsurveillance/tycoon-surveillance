@@ -104,7 +104,7 @@ const AccessControl = () => {
               </div>
             </div>
 
-            
+
           </div>
         </aside>
 
@@ -118,10 +118,10 @@ const AccessControl = () => {
 
             <div className="hero-text">
               <p>
-            Installing an access control system is an important step to keep homes, businesses, and public spaces safe. A good system lets you monitor access in real time, stops unauthorized entry, and creates a secure environment for people and property.  </p>
+                Installing an access control system is an important step to keep homes, businesses, and public spaces safe. A good system lets you monitor access in real time, stops unauthorized entry, and creates a secure environment for people and property.  </p>
               <br />
               <p>
-             A reliable access control service not only prevents security breaches but also keeps detailed logs that help with audits and investigations. Businesses can better protect employees and assets, while homeowners can feel confident that their family and property are safe. Whether for homes, offices, or industrial spaces, professional access control services provide proactive safety and security.</p>
+                A reliable access control service not only prevents security breaches but also keeps detailed logs that help with audits and investigations. Businesses can better protect employees and assets, while homeowners can feel confident that their family and property are safe. Whether for homes, offices, or industrial spaces, professional access control services provide proactive safety and security.</p>
             </div>
           </div>
 
@@ -130,7 +130,7 @@ const AccessControl = () => {
             <h2>Advanced Access Control Management Solutions</h2>
 
             <p>
-         Our solutions use a strong access control system to manage entry in homes, offices, and businesses. The system includes software that lets you track access in real time, generate detailed reports, and easily set permissions. With reliable monitoring, these systems provide continuous oversight, secure entry, and better protection for people and property.  </p>
+              Our solutions use a strong access control system to manage entry in homes, offices, and businesses. The system includes software that lets you track access in real time, generate detailed reports, and easily set permissions. With reliable monitoring, these systems provide continuous oversight, secure entry, and better protection for people and property.  </p>
 
             <div className="info-lists">
               <ul>
@@ -147,7 +147,7 @@ const AccessControl = () => {
             </div>
 
             <div className="info-img-wrapper">
-              <img src={sectionImg} className="info-image" alt="Security Operator" />
+              <img src={sectionImg} className="info-image" alt="Security Operator" loading="lazy" />
             </div>
           </section>
 
@@ -155,10 +155,10 @@ const AccessControl = () => {
           <section className="lvm-adv-section">
             <div className="adv-header">
               <h2 className="adv-title">
-                 <span>Modern Access Control </span> Management Systems
+                <span>Modern Access Control </span> Management Systems
               </h2>
               <p className="adv-desc">
-              Our security solutions offer advanced access control management services designed for residential and commercial properties. By utilizing modern access control systems and integrated monitoring solutions, we ensure comprehensive protection through secure entry management, real-time access tracking, and detailed activity logs. Strategic system placement, seamless integration, and continuous oversight provide clients with a complete access control service that enhances safety, accountability, and operational efficiency.</p>
+                Our security solutions offer advanced access control management services designed for residential and commercial properties. By utilizing modern access control systems and integrated monitoring solutions, we ensure comprehensive protection through secure entry management, real-time access tracking, and detailed activity logs. Strategic system placement, seamless integration, and continuous oversight provide clients with a complete access control service that enhances safety, accountability, and operational efficiency.</p>
             </div>
 
             <div className="adv-left">
@@ -190,7 +190,7 @@ const AccessControl = () => {
             </div>
 
             <div className="adv-right">
-              <img src={advImg} alt="surveillance" className="adv-image" />
+              <img src={advImg} alt="surveillance" className="adv-image" loading="lazy" />
             </div>
           </section>
 
@@ -201,7 +201,7 @@ const AccessControl = () => {
             </h2>
 
             <p className="strategy-desc">
-           Stay informed with advanced monitoring solutions that safeguard your property. Our approach provides continuous surveillance, timely alerts, and proactive measures to prevent potential risks.
+              Stay informed with advanced monitoring solutions that safeguard your property. Our approach provides continuous surveillance, timely alerts, and proactive measures to prevent potential risks.
             </p>
 
             {/* Cards */}
@@ -210,7 +210,7 @@ const AccessControl = () => {
                 <div className="strategy-icon"><RiAlertLine /></div>
                 <h3>Monitoring Challenges</h3>
                 <p>
-                We address coverage gaps and potential vulnerabilities to provide thorough and reliable protection.
+                  We address coverage gaps and potential vulnerabilities to provide thorough and reliable protection.
                 </p>
               </div>
 
@@ -218,7 +218,7 @@ const AccessControl = () => {
                 <div className="strategy-icon"><GiShield /></div>
                 <h3>Security Strategy</h3>
                 <p>
-                A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.
+                  A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.
                 </p>
               </div>
             </div>

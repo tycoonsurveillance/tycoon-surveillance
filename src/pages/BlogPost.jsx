@@ -19,16 +19,15 @@ const BlogPost = () => {
   const [metadata, setMetadata] = useState(null);
 
   useEffect(() => {
-    // 1. Find metadata from blogData based on the current slug
-    // The route in blogData is like "/blogs/slug", so we match that.
     const currentPath = `/blogs/${slug}`;
-    const foundBlog = blogData.find((b) => b.route.trim() === currentPath);
+    const foundBlog = blogData.find(
+      (b) => b.route.trim() === currentPath
+    );
 
     if (foundBlog) {
       setMetadata(foundBlog);
     }
 
-    // 2. Load the markdown content
     const loadContent = async () => {
       const filePath = `../content/blogs/${slug}.md`;
       const loader = markdownFiles[filePath];
@@ -36,9 +35,13 @@ const BlogPost = () => {
       if (loader) {
         try {
           const rawMarkdown = await loader();
-          // Remove frontmatter if it exists (simple regex for --- ... ---)
-          const contentWithoutFrontmatter = rawMarkdown.replace(/^---[\s\S]*?---\n/, "");
-          setContent(contentWithoutFrontmatter);
+
+          // 🔥 STRIP FRONTMATTER COMPLETELY
+          const cleanedMarkdown = rawMarkdown
+            .replace(/^---[\s\S]*?---/, "")
+            .trim();
+
+          setContent(cleanedMarkdown);
         } catch (error) {
           console.error("Error loading markdown file:", error);
           setContent("Error loading content.");
@@ -53,7 +56,13 @@ const BlogPost = () => {
   }, [slug]);
 
   if (!metadata) {
-    return <div className="lvm-page"><div className="bd-section"><p>Loading...</p></div></div>;
+    return (
+      <div className="lvm-page">
+        <div className="bd-section">
+          <p>Loading...</p>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -78,10 +87,8 @@ const BlogPost = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* Render Markdown Content */}
           <ReactMarkdown>{content}</ReactMarkdown>
 
-          {/* Social Icons (hardcoded from original) */}
           <div className="bd-social-icons">
             <span className="bd-icon"><FaFacebookF /></span>
             <span className="bd-icon"><FaWhatsapp /></span>

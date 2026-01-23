@@ -30,30 +30,53 @@ a {
 }
 
 /* TYPOGRAPHY */
-h1 { font-size: 42px; font-weight: 800; }
-h2 { font-size: 30px; font-weight: 700; line-height: 1.25; }
-h2 span { color: var(--red); }
-h4 { font-size: 16px; font-weight: 600; }
-p { font-size: 14.5px; line-height: 1.7; color: var(--gray); }
+h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h2 span {
+  color: var(--red);
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--gray);
+}
 
 /* HERO */
 .retail-page-hero {
-  height: 450px;
-  background: url("/public/contact-bg.jpg") center / cover no-repeat;
+  height: 60vh;
+  min-height: 500px;
+  background: url("/contact-bg.jpg") center / cover no-repeat;
   display: grid;
   place-items: center;
   text-align: center;
   color: #fff;
   position: relative;
-  margin-top: -180px;
-  padding-top: 100px;
+  padding-top: 140px;
+  margin-top: -170px;
 }
 
 .retail-page-hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .retail-page-hero h1 {
@@ -132,7 +155,7 @@ p { font-size: 14.5px; line-height: 1.7; color: var(--gray); }
   padding: 26px 22px;
   border-radius: 22px;
   background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url("../assets/contact-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -358,7 +381,8 @@ p { font-size: 14.5px; line-height: 1.7; color: var(--gray); }
 }
 
 .retail-page-superior-content h2 span {
-  color: #e10600; /* red "protection" */
+  color: #e10600;
+  /* red "protection" */
 }
 
 .retail-page-superior-content p {
@@ -543,7 +567,7 @@ p { font-size: 14.5px; line-height: 1.7; color: var(--gray); }
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .retail-page-container {
     display: flex;
     flex-direction: column;
@@ -551,63 +575,76 @@ p { font-size: 14.5px; line-height: 1.7; color: var(--gray); }
   }
 
   .retail-page-sidebar {
-    order: -1;
+    order: 2;
+    /* Sidebar at bottom */
     position: static;
     width: 100%;
   }
 
-  .retail-page-sidebar-card,
+  /* ... existing code ... */
+
+  .retail-page-container {
+    padding: 0 16px;
+    /* Increased padding */
+    margin: 40px auto;
+  }
+
+  .retail-page-sidebar-card {
+    padding: 22px;
+  }
+
+  .retail-page-sidebar-card ul li {
+    padding: 12px 14px;
+    font-size: 13.5px;
+  }
+
   .retail-page-contact-card {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 22px;
+    padding: 22px;
   }
 
-  .retail-page-content {
-    width: 100%;
+  .retail-page-contact-row {
+    padding: 13px 16px;
+    font-size: 13.5px;
   }
 
-  .retail-page-superior-section {
-    grid-template-columns: 1fr;
-    gap: 28px;
+  .retail-page-image-text img {
+    margin-bottom: 18px;
   }
 
-  .retail-page-service-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  h1 { font-size: 23px; line-height: 1.25; }
-  h2 { font-size: 22px; }
-  .retail-page-hero { height: 280px;  }
-  .retail-page-container { padding: 0 14px; margin: 30px auto; }
-
-  .retail-page-sidebar-card { padding: 22px; }
-  .retail-page-sidebar-card ul li { padding: 12px 14px; font-size: 13.5px; }
-
-  .retail-page-contact-card { padding: 22px; }
-  .retail-page-contact-row { padding: 13px 16px; font-size: 13.5px; }
-
-  .retail-page-image-text img { margin-bottom: 18px; }
   .retail-page-grid-overlay,
-  .retail-page-signal-overlay { display: none; }
+  .retail-page-signal-overlay {
+    display: none;
+  }
 
   .retail-page-service-grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .retail-page-service-grid div { padding: 22px; }
+  .retail-page-service-grid div {
+    padding: 22px;
+  }
 
-  .retail-page-enhanced-section .retail-page-step-item { align-items: flex-start; gap: 14px; }
-  .retail-page-faq-section { max-width: 100%; }
+  .retail-page-enhanced-section .retail-page-step-item {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .retail-page-faq-section {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 400px) {
-  h1 { font-size: 25px; }
-  h2 { font-size: 20px; }
-  .retail-page-contact-logo { width: 115px; }
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .retail-page-contact-logo {
+    width: 115px;
+  }
 }
-
-

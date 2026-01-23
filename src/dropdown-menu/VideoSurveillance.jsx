@@ -104,7 +104,7 @@ const VideoSurveillance = () => {
               </div>
             </div>
 
-           
+
           </div>
         </aside>
 
@@ -118,10 +118,10 @@ const VideoSurveillance = () => {
 
             <div className="hero-text">
               <p>A good video surveillance system is important for keeping homes, businesses, and public areas safe. A well-designed system lets you watch in real time, stops potential threats, and creates a secure environment for people and property.
-               </p>
+              </p>
               <br />
               <p>
-              Using a complete video surveillance system not only helps prevent crime but also provides clear recorded footage that can help in investigations. Businesses can protect their employees and assets, while homeowners can feel confident that their family and property are safe. Whether for homes, offices, or industrial spaces, professional video surveillance services offer reliable and proactive security. </p>
+                Using a complete video surveillance system not only helps prevent crime but also provides clear recorded footage that can help in investigations. Businesses can protect their employees and assets, while homeowners can feel confident that their family and property are safe. Whether for homes, offices, or industrial spaces, professional video surveillance services offer reliable and proactive security. </p>
             </div>
           </div>
 
@@ -130,7 +130,7 @@ const VideoSurveillance = () => {
             <h2>Why Choose Professional Video Monitoring</h2>
 
             <p>
-           Expert video surveillance services ensure homes, offices, and commercial properties are continuously protected. Utilizing modern video surveillance systems with high-definition cameras, motion detection, and remote access capabilities, clients benefit from accurate monitoring and timely alerts. Strategic placement, seamless integration, and real-time observation make this video surveillance monitoring service a reliable solution for enhanced safety, control, and peace of mind.  </p>
+              Expert video surveillance services ensure homes, offices, and commercial properties are continuously protected. Utilizing modern video surveillance systems with high-definition cameras, motion detection, and remote access capabilities, clients benefit from accurate monitoring and timely alerts. Strategic placement, seamless integration, and real-time observation make this video surveillance monitoring service a reliable solution for enhanced safety, control, and peace of mind.  </p>
 
             <div className="info-lists">
               <ul>
@@ -147,7 +147,7 @@ const VideoSurveillance = () => {
             </div>
 
             <div className="info-img-wrapper">
-              <img src={sectionImg} className="info-image" alt="Security Operator" />
+              <img src={sectionImg} className="info-image" alt="Security Operator" loading="lazy" />
             </div>
           </section>
 
@@ -155,10 +155,10 @@ const VideoSurveillance = () => {
           <section className="lvm-adv-section">
             <div className="adv-header">
               <h2 className="adv-title">
-                 <span> How Our </span> Video Surveillance Services Work
+                <span> How Our </span> Video Surveillance Services Work
               </h2>
               <p className="adv-desc">
-              Our security solutions provide advanced video surveillance for homes and businesses. We offer modern systems with high-definition cameras, motion detection, and remote access to keep your property fully protected. By placing cameras strategically, integrating systems smoothly, and offering real-time monitoring, we give our clients complete surveillance services that improve safety, control, and peace of mind. </p>
+                Our security solutions provide advanced video surveillance for homes and businesses. We offer modern systems with high-definition cameras, motion detection, and remote access to keep your property fully protected. By placing cameras strategically, integrating systems smoothly, and offering real-time monitoring, we give our clients complete surveillance services that improve safety, control, and peace of mind. </p>
             </div>
 
             <div className="adv-left">
@@ -190,7 +190,7 @@ const VideoSurveillance = () => {
             </div>
 
             <div className="adv-right">
-              <img src={advImg} alt="surveillance" className="adv-image" />
+              <img src={advImg} alt="surveillance" className="adv-image" loading="lazy" />
             </div>
           </section>
 
@@ -201,7 +201,7 @@ const VideoSurveillance = () => {
             </h2>
 
             <p className="strategy-desc">
-          Stay informed with advanced monitoring designed to keep your property safe. Our approach ensures continuous observation, timely alerts, and proactive prevention of potential risks.
+              Stay informed with advanced monitoring designed to keep your property safe. Our approach ensures continuous observation, timely alerts, and proactive prevention of potential risks.
             </p>
 
             {/* Cards */}
@@ -210,8 +210,8 @@ const VideoSurveillance = () => {
                 <div className="strategy-icon"><RiAlertLine /></div>
                 <h3>Monitoring Challenges</h3>
                 <p>
-                 We address coverage gaps and potential vulnerabilities to provide thorough and reliable protection.
-                
+                  We address coverage gaps and potential vulnerabilities to provide thorough and reliable protection.
+
                 </p>
               </div>
 
@@ -219,7 +219,7 @@ const VideoSurveillance = () => {
                 <div className="strategy-icon"><GiShield /></div>
                 <h3>Security Strategy</h3>
                 <p>
-                A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.</p>
+                  A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.</p>
               </div>
             </div>
 

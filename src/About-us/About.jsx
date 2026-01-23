@@ -39,7 +39,12 @@ const About = () => {
     <div className="lvm-page">
       {/* Banner */}
       {/* Banner */}
-      <section className="lvm-banner">
+      <section
+        className="lvm-banner"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/contact-bg.jpg")`,
+        }}
+      >
         <h1 className="lvm-banner-title">ABOUT US</h1>
       </section>
 
@@ -75,7 +80,7 @@ const About = () => {
           >
             <p className="a14-label">ABOUT US</p>
             <h2 className="a15-heading">
-              <span>Protecting Homes,</span> Businesses 
+              <span>Protecting Homes,</span> Businesses
               and Every Spaces
             </h2>
             <p className="a16-desc">
@@ -97,7 +102,7 @@ const About = () => {
               </div>
               <div className="a22-text">
                 <p>Call Directly 24/7</p>
-                <h4>+(1) 281 602 3421</h4>
+                <h4>+923150289316</h4>
               </div>
               <button className="a23-btn">More About →</button>
             </div>

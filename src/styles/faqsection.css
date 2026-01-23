@@ -6,13 +6,13 @@
 
 /* BACKGROUND */
 .faqGridBackground {
-  /* background-color: #f9f9f9;
+  background-color: #f9f9f9;
   background-image:
     linear-gradient(#eee 1px, transparent 1px),
     linear-gradient(90deg, #eee 1px, transparent 1px);
-  background-size: 28px 28px; */
+  background-size: 28px 28px;
    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("/public/contact-bg.jpg") center/cover no-repeat!important;
+    url("../assets/background.png") center/cover no-repeat!important;
     border-top: 2px solid orange;
 }
 

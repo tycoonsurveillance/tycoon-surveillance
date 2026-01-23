@@ -105,7 +105,7 @@ const AccountManagement = () => {
               </div>
             </div>
 
-            
+
           </div>
         </aside>
 
@@ -119,10 +119,10 @@ const AccountManagement = () => {
 
             <div className="hero-text">
               <p>
-            Managing financial data each month can be challenging for growing businesses. Tycoon Guards provides professional accounts management services that streamline reporting and support smarter decision-making. Our dedicated team ensures every detail is accurately tracked, analyzed, and clearly presented to help drive effective business strategies.  </p>
+                Managing financial data each month can be challenging for growing businesses. Tycoon Guards provides professional accounts management services that streamline reporting and support smarter decision-making. Our dedicated team ensures every detail is accurately tracked, analyzed, and clearly presented to help drive effective business strategies.  </p>
               <br />
               <p>
-             Our customized account management solutions go beyond tracking numbers to uncover key patterns and trends that drive growth. From financial account management and detailed reporting to client security account services, we provide clear insights into profits, sales performance, employee productivity, and overall business efficiency. Partnering with Tycoon Guards gives you access to reliable financial reporting services that enable strategic planning, maintain competitiveness, and support long-term success. </p>
+                Our customized account management solutions go beyond tracking numbers to uncover key patterns and trends that drive growth. From financial account management and detailed reporting to client security account services, we provide clear insights into profits, sales performance, employee productivity, and overall business efficiency. Partnering with Tycoon Guards gives you access to reliable financial reporting services that enable strategic planning, maintain competitiveness, and support long-term success. </p>
             </div>
           </div>
 
@@ -131,7 +131,7 @@ const AccountManagement = () => {
             <h2>Why Outsource C-Store & Gas station Accounting Services to Tycoon Guards?</h2>
 
             <p>
-        Outsourcing your management accounting to Tycoon Guards helps you save time, reduce costs, and access expert financial insights without the challenges of in-house management. Our services combine accuracy, transparency, and customized reporting, providing a clear view of your business performance. With our dependable account management solutions, you can concentrate on growth while we handle your financial data with precision and professionalism.    </p>
+              Outsourcing your management accounting to Tycoon Guards helps you save time, reduce costs, and access expert financial insights without the challenges of in-house management. Our services combine accuracy, transparency, and customized reporting, providing a clear view of your business performance. With our dependable account management solutions, you can concentrate on growth while we handle your financial data with precision and professionalism.    </p>
 
             <div className="info-lists">
               <ul>
@@ -148,7 +148,7 @@ const AccountManagement = () => {
             </div>
 
             <div className="info-img-wrapper">
-              <img src={sectionImg} className="info-image" alt="Security Operator" />
+              <img src={sectionImg} className="info-image" alt="Security Operator" loading="lazy" />
             </div>
           </section>
 
@@ -156,10 +156,10 @@ const AccountManagement = () => {
           <section className="lvm-adv-section">
             <div className="adv-header">
               <h2 className="adv-title">
-                 <span>How Our Accounts Management </span> Services Work
+                <span>How Our Accounts Management </span> Services Work
               </h2>
               <p className="adv-desc">
-              At Tycoon Guards, we offer professional accounts management services that simplify financial processes for businesses of all sizes. From business accounts management to advanced financial reporting, we provide complete visibility into your financial performance. By integrating accurate record-keeping, management accounting, and secure client account services, we empower you to make informed decisions that drive growth and operational efficiency. </p>
+                At Tycoon Guards, we offer professional accounts management services that simplify financial processes for businesses of all sizes. From business accounts management to advanced financial reporting, we provide complete visibility into your financial performance. By integrating accurate record-keeping, management accounting, and secure client account services, we empower you to make informed decisions that drive growth and operational efficiency. </p>
             </div>
 
             <div className="adv-left">
@@ -191,7 +191,7 @@ const AccountManagement = () => {
             </div>
 
             <div className="adv-right">
-              <img src={advImg} alt="surveillance" className="adv-image" />
+              <img src={advImg} alt="surveillance" className="adv-image" loading="lazy" />
             </div>
           </section>
 
@@ -202,7 +202,7 @@ const AccountManagement = () => {
             </h2>
 
             <p className="strategy-desc">
-            Stay informed with advanced monitoring solutions that protect your property. Our approach provides continuous surveillance, timely alerts, and proactive measures to prevent potential risks.
+              Stay informed with advanced monitoring solutions that protect your property. Our approach provides continuous surveillance, timely alerts, and proactive measures to prevent potential risks.
             </p>
 
             {/* Cards */}
@@ -211,14 +211,14 @@ const AccountManagement = () => {
                 <div className="strategy-icon"><RiAlertLine /></div>
                 <h3>Monitoring Challenges</h3>
                 <p>
-                We address coverage gaps and potential vulnerabilities to provide thorough and reliable protection. </p>
+                  We address coverage gaps and potential vulnerabilities to provide thorough and reliable protection. </p>
               </div>
 
               <div className="strategy-card reveal">
                 <div className="strategy-icon"><GiShield /></div>
                 <h3>Security Strategy</h3>
                 <p>
-                A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.
+                  A tailored monitoring approach delivers complete coverage, ongoing supervision, and effective measures to ensure safety and peace of mind.
                 </p>
               </div>
             </div>

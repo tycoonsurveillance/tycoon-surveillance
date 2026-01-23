@@ -3,12 +3,10 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import "../styles/featureBlogs.css";
 
-import one from "../assets/About-Image-1.png";
-import two from "../assets/About-Image-1.png";
-import three from "../assets/About-Image-1.png";
-import four from "../assets/About-Image-1.png";
-import five from "../assets/About-Image-1.png";
-import six from "../assets/About-Image-1.png";
+
+import four from "../pages/blogs-img/blog1.webp";
+import five from "../pages/blogs-img/blog2.webp";
+import six from "../pages/blogs-img/blog3.webp";
 
 const fadeUp = {
   initial: { opacity: 0, y: 40 },

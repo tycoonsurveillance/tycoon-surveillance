@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0%;
   padding: 0%;
 }
@@ -31,22 +31,30 @@
 }
 
 @keyframes fadeSlow {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: none; }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* ---------- BANNER ---------- */
 .lvm-banner {
-  height: 500px;
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("/public/contact-bg.jpg") center/cover no-repeat;
+  height: 60vh;
+  min-height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/contact-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 28px;
+  margin-top: -170px;
   box-shadow: var(--shadow-lg);
   animation: fadeUp 0.9s ease;
-  margin-top: -180px;
 }
 
 .lvm-banner-title {
@@ -55,7 +63,7 @@
   color: #fff;
   letter-spacing: 1px;
   animation: fadeIn 1.2s ease;
-  padding-top: 100px;
+  padding-top: 140px;
 }
 
 
@@ -154,12 +162,36 @@
 @media (max-width: 1024px) {
   .blog-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lvm-banner {
+    height: 50vh;
+    min-height: 400px;
+    padding-top: 100px;
+  }
+
+  .lvm-banner-title {
+    font-size: 32px;
+    padding-top: 60px;
+  }
+
+  .blog-section {
+    margin-top: 40px;
+    margin-bottom: 80px;
   }
 }
 
 @media (max-width: 640px) {
   .blog-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .blog-content h3 {
+    font-size: 20px;
   }
 }
 
