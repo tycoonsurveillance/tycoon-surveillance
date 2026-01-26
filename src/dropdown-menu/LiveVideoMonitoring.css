@@ -28,6 +28,7 @@
   color: #111;
   background: #fff;
   animation: fadeSlow 0.6s ease;
+  
 }
 
 .lvm-sidebar {
@@ -328,6 +329,7 @@
   box-shadow: var(--shadow-lg);
   color: #fff;
   animation: fadeUp 1s ease;
+  text-align: left;
 }
 
 .lvm-info-box h2 {
@@ -390,6 +392,9 @@
   margin-bottom: 20px;
 }
 
+.hero-text{
+  text-align: justify;
+}
 .adv-title {
   font-size: 30px;
   font-weight: 900;
@@ -406,6 +411,7 @@
   margin: 0 auto;
   color: #555;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .adv-point {

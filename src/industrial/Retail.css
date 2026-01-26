@@ -648,3 +648,18 @@ p {
     width: 115px;
   }
 }
+/* ================= MOBILE ORDER FIX (768px ↓) ================= */
+@media (max-width: 768px) {
+  .retail-page-superior-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .retail-page-superior-img {
+    order: 1; /* Image first */
+  }
+
+  .retail-page-superior-content {
+    order: 2; /* Content after image */
+  }
+}

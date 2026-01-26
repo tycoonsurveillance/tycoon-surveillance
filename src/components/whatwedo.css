@@ -43,6 +43,7 @@
   line-height: 28px;
   margin-bottom: 18px;
   color: white;
+  text-align: justify;
 }
 
 /* CALL BOX */
@@ -50,12 +51,13 @@
   margin-top: 30px;
   display: flex;
   align-items: center;
-  background: #ff3c00;
+  background: black;
   padding: 20px 30px;
   border-radius: 14px;
   cursor: pointer;
   width: fit-content;
   transition: all 0.3s ease;
+  border: 1px solid orange;
 }
 
 .call-icon {
@@ -90,18 +92,19 @@
 /* STAT CARDS */
 .wd-card {
   position: absolute;
-  background: #fff;
+  background: white;
   color: #333;
   padding: 20px 25px;
   border-radius: 16px;
   width: 180px;
-  text-align: center;
+  text-align: justify;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  border: 1px solid orange;
 }
 
 .card1 {
@@ -117,7 +120,7 @@
 .wd-card h2 {
   margin: 0;
   font-size: 26px;
-  color: #ff3c00;
+  color: black;
   font-weight: 800;
 }
 
@@ -133,7 +136,9 @@
     flex-direction: column;
     gap: 40px;
   }
-
+.section-text{
+  text-align: justify;
+}
 .call-box{
   position: relative;
   left: 1px;

@@ -61,7 +61,7 @@ const WhatWeDo = () => {
             whileHover={{ scale: 1.05, boxShadow: "0px 15px 30px rgba(0,0,0,0.2)" }}
             transition={{ duration: 0.3 }}
           >
-            <FaUsers size={30} color="#ff3c00" />
+            <FaUsers size={30} color="orange" />
             <h2>2,350+</h2>
             <p>Crime Prevention</p>
           </motion.div>
@@ -71,7 +71,7 @@ const WhatWeDo = () => {
             whileHover={{ scale: 1.05, boxShadow: "0px 15px 30px rgba(0,0,0,0.2)" }}
             transition={{ duration: 0.3 }}
           >
-            <FaVideo size={30} color="#ff3c00" />
+            <FaVideo size={30} color="orange" />
             <h2>4,600+</h2>
             <p>Cameras Monitored</p>
           </motion.div>

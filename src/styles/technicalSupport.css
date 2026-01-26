@@ -145,6 +145,7 @@
   color: white !important;
   max-width: 650px;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 /* ---------- FEATURES ---------- */
@@ -165,14 +166,14 @@
   height: 52px;
   min-width: 52px;
   min-height: 52px;
-  background: var(--accent);
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 14px 32px orange;
+  /* box-shadow: 0 14px 32px orange; */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid orange;
 }
 
 .sec-icon i {
@@ -183,7 +184,7 @@
 
 .sec-support-feature:hover .sec-icon {
   transform: scale(1.12);
-  box-shadow: 0 22px 50px orange;
+  /* box-shadow: 0 22px 50px orange; */
   color: white !important;
 }
 
@@ -203,21 +204,22 @@
   padding: 15px 38px;
   border-radius: 40px;
   background: var(--accent);
-  color: #fff;
-  border: none;
+  color: white;
+  border: 1px solid orange;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 20px 45px orange;
+  /* box-shadow: 0 20px 45px orange; */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: black;
 }
 
 .sec-support-btn:hover {
   transform: scale(1.06);
-  box-shadow: 0 30px 65px orange;
+  /* box-shadow: 0 30px 65px orange; */
 }
 
 .sec-support-btn i {
@@ -268,8 +270,4 @@
     gap: 28px;
   }
 
-  .sec-contact {
-    display: none;
-    /* Hide badge on mobile if it overlaps or is too small */
-  }
 }

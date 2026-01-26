@@ -73,6 +73,7 @@
 
 .contact-badge:hover {
   transform: scale(1.15);
+
 }
 
 .contact-badge img {
@@ -103,6 +104,7 @@
 
 .feature-card:hover {
   transform: translateY(-10px);
+
 }
 
 /* ICON ZOOM */
@@ -110,6 +112,8 @@
   font-size: 42px;
   margin-bottom: 18px;
   transition: transform 0.4s ease;
+  border: 1px solid orange;
+  
 }
 
 .feature-card:hover .feature-icon {

@@ -72,8 +72,7 @@ const Hero = () => {
             <a
   href="https://youtu.be/Y-x0efG1seA?list=TLGG2chE6p3a9AExMTAxMjAyNg"
   target="_blank"
-  rel="noopener noreferrer"
->Watch Video</a>
+  rel="noopener noreferrer">Watch Video</a>
             
           </button>
         </div>

@@ -47,7 +47,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="nav-container" ref={dropdownRef}>
           <Link to="/About" className="nav-item">
-            <img src={logo} alt="Tycoon Guards" className="logo" />
+            <img src={logo} alt="Tycoon Surveillance" className="logo" />
           </Link>
 
           {/* DESKTOP LINKS */}

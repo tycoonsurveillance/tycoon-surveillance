@@ -18,14 +18,14 @@ const fadeUp = {
 const blogData = [
   {
     title:
-      "Protecting Your Site: The Complete Guide to Construction Video Surveillance",
+    "Protecting Your Site: The Complete Guide to Construction Video Surveillance",
     image: four,
     date: "03 Dec",
     slug: "construction-video-surveillance-guide",
   },
   {
     title:
-      "Is Your Business at Risk? Why You Need a Custom Video Surveillance System",
+    "Is Your Business at Risk? Why You Need a Custom Video Surveillance System",
     image: five,
     date: "01 Dec",
     slug: "custom-video-surveillance",
