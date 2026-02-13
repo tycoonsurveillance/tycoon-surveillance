@@ -13,7 +13,7 @@ import {
 import live from "../Services-Images/service3.png";
 import video from "../Services-Images/service4.png";
 import Account from "../Services-Images/service5.png";
-import alarm from "../Services-Images/service6.png";
+import alarm from "../Services-Images/service6.jpeg";
 import AccountM from "../Services-Images/service8.png";
 import vs from "../Services-Images/service9.png";
 
@@ -49,7 +49,7 @@ const services = [
   {
     title: "Accounts Management",
     slug: "account-management",
-    desc: "SEfficient accounts management to track finances, streamline processes, and ensure accuracy.",
+    desc: "Efficient  accounts management to track finances, streamline processes, and ensure accuracy.",
     icon: <FaUserCog />,
     image: AccountM,
   },

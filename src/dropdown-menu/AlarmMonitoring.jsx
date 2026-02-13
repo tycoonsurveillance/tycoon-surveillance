@@ -4,7 +4,7 @@ import "./LiveVideoMonitoring.css";
 
 import heroImg from "../service-drop-img/drop7.png";
 import sectionImg from "../service-drop-img/drop8.png";
-import advImg from "../Services-Images/Advanced Surveillance.png";
+import advImg from "../service-drop-img/drop15.png";
 
 import { RiAlertLine } from "react-icons/ri";  // Real-Time Threat
 import { GiShield } from "react-icons/gi";     // Monitoring Challenges

@@ -4,23 +4,22 @@
 }
 
 /* ---------- VARIABLES ---------- */
-:root {
-  --bu-accent: #d93b1c;
-  --bu-accent-light: #ff5c3a;
-  --bu-text-dark: #111;
 
-  --bu-radius-lg: 22px;
-  --bu-shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.18);
-  --bu-shadow-md: 0 12px 30px rgba(0, 0, 0, 0.14);
-  --bu-shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.08);
-  
-}
+
 
 /* ---------- PAGE ---------- */
 .bu-page {
   font-family: Inter, sans-serif;
-  color: var(--bu-text-dark);
+  color: black;
   animation: buFadeSlow 0.6s ease;
+    width: 100%;
+  padding: 100px 0;
+  background: none;
+  text-align: center;
+  border-top: 1px solid orange;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+    url("../assets/background.png") center/cover no-repeat;
+     border-bottom: 1px solid orange;
 }
 
 @keyframes buFadeSlow {
@@ -51,7 +50,7 @@
 /* ---------- BLOG CARD ---------- */
 .bu-blog-card {
   background: #fff;
-  border-radius: var(--bu-radius-lg);
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   box-shadow: var(--bu-shadow-sm);

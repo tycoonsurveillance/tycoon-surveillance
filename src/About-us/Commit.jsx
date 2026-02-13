@@ -10,8 +10,6 @@ import teamImg2 from "./about-imgs/about6.png"; // bottom group photo
 import teamImg3 from "./about-imgs/about7.png"; // bottom group photo
 
 
-
-
  const fadeUp = {
    initial: { opacity: 0, y: 40 },
    whileInView: { opacity: 1, y: 0 },
@@ -34,7 +32,7 @@ import teamImg3 from "./about-imgs/about7.png"; // bottom group photo
    }, []);
  
    return (
-     <div className="lvm-page">
+     <div className="main-commit">
 <section className="commit-section">
 
   {/* LEFT SIDE IMAGES */}

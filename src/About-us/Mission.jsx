@@ -25,7 +25,7 @@
    }, []);
  
    return (
-     <div className="lvm-page">
+     <div className="mission-main">
 
 {/* MISSION / VISION / GOAL SECTION */}
 <section className="mission-section">

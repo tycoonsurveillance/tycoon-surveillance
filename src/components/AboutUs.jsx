@@ -4,7 +4,7 @@ import "../styles/AboutUs.css";
 
 import badgeImg from "../assets/About-circle-image.png";
 import mainImg from "../Services-Images/service1.png";
-import subImg from "../Services-Images/service6.png";
+import subImg from "../Services-Images/service6.jpeg";
 import experienceImg from "../Services-Images/About-Image-3.png";
 import phoneIcon from "../assets/phone.png";
 
@@ -74,7 +74,7 @@ const About = () => {
 
               <div className="contact-text">
                 <p>Call Directly 24/7</p>
-                <h4>+92 150289316</h4>
+                <h4>+92 3150289316</h4>
               </div>
 
               <button className="contact-btn">More About →</button>

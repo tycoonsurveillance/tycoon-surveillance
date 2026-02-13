@@ -5,7 +5,7 @@
   width: 100%;
   padding: 64px 6%;
   text-align: center;
-  background: #ffffff;
+  background: none;
   overflow: hidden;
 
    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
@@ -30,7 +30,7 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 32px;
-  color: #111;
+  color: white;
 }
 
 .testi-title span {
@@ -58,9 +58,9 @@
 
 /* Cards */
 .testi-card {
-  background: #fff;
+  background: none;
   padding: 28px;
-  border-radius: 18px;
+  border-radius: 10px;
   box-shadow: 0 12px 30px rgba(17, 17, 17, 0.06);
   text-align: left;
   width: 100%;
@@ -74,6 +74,7 @@
   flex-direction: column;
   cursor: default;
   text-align: justify;
+  border: 2px solid orange;
 }
 
 .testi-card:hover {
@@ -117,7 +118,7 @@
   font-size: 16px;
   font-weight: 800;
   margin: 0 0 4px 0;
-  color: #111;
+  color: white;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -126,7 +127,7 @@
 .testi-role {
   font-size: 13px;
   margin: 0;
-  color: #666;
+  color: white;
 }
 
 /* Quote */
@@ -140,7 +141,7 @@
 /* Divider */
 .testi-divider {
   height: 1px;
-  background: #f0f0f0;
+  background: none;
   margin: 14px 0;
 }
 
@@ -159,7 +160,7 @@
 /* Text */
 .testi-text {
   font-size: 15px;
-  color: #333;
+  color: white;
   line-height: 1.5;
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
@@ -170,14 +171,15 @@
   justify-content: center;
   gap: 14px;
   margin-top: 16px;
+  
 }
 
 .arrow-btn {
   width: 44px;
   height: 44px;
   border: none;
-  border-radius: 999px;
-  background: #fff;
+  border-radius: 10px;
+  background: none;
   font-size: 18px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   cursor: pointer;
@@ -186,12 +188,14 @@
   align-items: center;
   justify-content: center;
   padding: 0;
+background-color: white;
+border: 2px solid orange;
 }
 
 .arrow-btn:hover,
 .arrow-btn:focus {
   transform: translateY(-4px) scale(1.05);
-  background: #f7f7f7;
+  background-color: white;
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
   outline: none;
 }

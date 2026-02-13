@@ -13,6 +13,7 @@
   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
     url("../assets/background.png") center/cover no-repeat !important;
   border-top: 2px solid orange;
+  border-bottom: 1px solid orange;
 }
 
 /* LEFT CONTENT */
@@ -74,7 +75,7 @@
   border: 1px solid orange;
   background: black;
   padding: 15px 20px;
-  border-radius: 12px;
+  border-radius: 10px;
   backdrop-filter: blur(6px);
   transition: 0.4s ease;
   cursor: pointer;
@@ -119,11 +120,11 @@
 }
 
 .contact-img {
-  width: 90%;
+  width: 50%;
   max-width: 500px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   animation: float 3s infinite ease-in-out;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .contact-img:hover {

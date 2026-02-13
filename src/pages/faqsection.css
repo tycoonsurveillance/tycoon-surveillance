@@ -1,15 +1,11 @@
-:root {
-  --primaryRed: orange;
-  --textDark: #111;
-  --textMuted: #555;
-}
+
 
 /* BACKGROUND */
 .faq1-gridBackground {
   background: url('/mnt/data/803df054-4fa5-47fa-805f-c7f927f91909.png') repeat;
   background-size: cover;
   padding: 100px 0;
-  color: var(--textDark);
+  color: white;
 }
 
 /* MAIN WRAPPER */
@@ -20,6 +16,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+ 
 }
 
 /* LEFT SIDE */
@@ -32,7 +29,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--primaryRed);
+  color: orange;
   font-weight: 600;
   margin-bottom: 16px;
 }
@@ -40,7 +37,7 @@
 .faq1-labelIcon {
   width: 18px;
   height: 18px;
-  background: var(--primaryRed);
+  background: none;
   color: #fff;
   font-size: 12px;
   border-radius: 50%;
@@ -53,15 +50,15 @@
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 20px;
-  color: var(--textDark);
+  color: white;
 }
 
 .faq1-heading span {
-  color: var(--primaryRed);
+  color: orange;
 }
 
 .faq1-paragraph {
-  color: var(--textDark);
+  color: white;
   line-height: 1.7;
   margin-bottom: 30px;
 }
@@ -77,14 +74,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--textDark);
+  color: white;
 }
 
 .faq1-benefits li::before {
   content: "✔";
   width: 18px;
   height: 18px;
-  background: var(--primaryRed);
+  background: none;
   color: #fff;
   border-radius: 50%;
   font-size: 12px;
@@ -95,15 +92,16 @@
 
 /* RIGHT CARD */
 .faq1-accordionCard {
-  background: #fff;
-  border-radius: 26px;
+  background: none;
+  border-radius: 10px;
   padding: 30px 34px;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
-  color: var(--textDark);
+  color: white;
+   border: 1px solid orange;
 }
 
 .faq1-accordionItem {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid orange;
 }
 
 .faq1-accordionItem:last-child {
@@ -117,7 +115,7 @@
   align-items: center;
   font-weight: 700;
   cursor: pointer;
-  color: var(--textDark);
+  color: white;
 }
 
 .faq1-toggleIcon {
@@ -126,12 +124,12 @@
 
 .faq1-toggleIcon.active {
   transform: rotate(180deg);
-  color: var(--primaryRed);
+  color: white;
 }
 
 .faq1-accordionBody {
   padding-bottom: 18px;
-  color: var(--textMuted);
+  color: white;
   line-height: 1.7;
   font-size: 15px;
 }

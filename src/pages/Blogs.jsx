@@ -24,7 +24,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="lvm-page">
+    <div className="lvm-blog">
       {/* Banner */}
       <section className="lvm-banner">
         <h1 className="lvm-banner-title">OUR BLOG</h1>

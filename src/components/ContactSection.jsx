@@ -58,7 +58,7 @@ const ContactSection = () => {
             <div className="info-icon"><FaEnvelope /></div>
             <div>
               <p className="info-label">Email address</p>
-              <p className="info-value">info@tycoonguards.com</p>
+              <p className="info-value">tycoonsurveillance@gmail.com</p>
             </div>
           </motion.div>
         </motion.div>

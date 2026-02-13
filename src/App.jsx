@@ -29,6 +29,7 @@ const Corporate = lazy(() => import("./industrial/Corporate"));
 const About = lazy(() => import("./About-us/About"));
 const Blogs = lazy(() => import("./pages/Blogs"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
+
 const ContactSection = lazy(() => import("./Contact-us/ContactSection"));
 
 function App() {

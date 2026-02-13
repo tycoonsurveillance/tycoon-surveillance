@@ -6,17 +6,14 @@
   font-family: Arial, sans-serif;
 }
 
-:root {
-  --accent: #d91e18;
-  --shadow-lg: 0 18px 44px rgba(0, 0, 0, 0.18);
-  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.14);
-}
 
 /* WRAPPER */
 .cp-wrapper {
   width: 100%;
-  background: #fff;
-  color: #111;
+  background: none;
+  color: white;
+border-bottom: 1px solid orange;
+    
 }
 
 /* HERO */
@@ -33,6 +30,8 @@
   /* Pull behind navbar */
   padding-top: 140px;
   /* Space for content */
+
+
 }
 
 .cp-hero-title {
@@ -43,8 +42,13 @@
 
 /* FLUID */
 .cp-fluid {
-  width: 100%;
-  padding: 80px 0;
+width: 100%;
+  padding: 100px 0;
+  background: none;
+  text-align: left;
+  border-top: 1px solid orange;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+    url("../assets/background.png") center/cover no-repeat;
 }
 
 .cp-container {
@@ -57,12 +61,13 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 60px;
   align-items: center;
+  
 }
 
 .cp-tag {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #777;
+  color: white;
 }
 
 .cp-heading {
@@ -72,30 +77,34 @@
 }
 
 .cp-heading span {
-  color: #111;
+  color: orange;
 }
 
 .cp-text {
   max-width: 480px;
   line-height: 1.7;
   margin-bottom: 25px;
+  color:  white;
 }
 
 /* SOCIAL */
 .cp-socials {
   display: flex;
   gap: 14px;
+  
 }
 
 .cp-social-icon {
   width: 46px;
   height: 46px;
-  background: var(--accent);
+  background: none;
   color: #fff;
   border-radius: 50%;
   display: grid;
   place-items: center;
   cursor: pointer;
+  border: 1px solid orange;
+  
 }
 
 /* CARDS */
@@ -108,11 +117,12 @@
 .cp-card {
   display: flex;
   gap: 15px;
-  padding: 24px;
-  background: #fff;
-  border-radius: 22px;
+  padding: 10px;
+  background: none;
+  border-radius: 10px;
   box-shadow: var(--shadow-md);
   transition: .3s;
+  border: 1px solid orange;
 }
 
 .cp-card:hover {
@@ -145,47 +155,58 @@
 .cp-map iframe {
   width: 100%;
   height: 520px;
-  border: none;
-  border-radius: 20px;
+  border: 1px solid orange;
+  border-radius: 10px;
   box-shadow: var(--shadow-lg);
 }
 
 /* FORM */
 .cp-form-box {
-  background: #fff;
-  padding: 40px;
-  border-radius: 22px;
+  background: none;
+  padding: 8px;
+  border-radius: 10px;
   box-shadow: var(--shadow-lg);
+  
 }
-
+.contact-p{
+  color: #fff;
+}
 .cp-row {
   display: flex;
   gap: 15px;
   margin-bottom: 15px;
+  color: white;
+  
 }
 
 .cp-form input,
 .cp-form textarea {
   width: 100%;
   padding: 16px;
-  border-radius: 12px;
-  border: 1px solid #ddd;
+  border-radius: 10px;
+  border: 1px solid orange;
+  color: white;
 }
 
 .cp-form textarea {
   height: 150px;
   resize: none;
+  background: white;
+  border: 1px solid orange;
+  color: white!important;
 }
 
 .cp-form button {
   width: 100%;
+  margin-top: 20px;
   padding: 18px;
-  border-radius: 40px;
+  border-radius: 10px;
   border: none;
-  background: var(--accent);
+  background: none;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  border: 1px solid orange;
 }
 
 .cp-terms {

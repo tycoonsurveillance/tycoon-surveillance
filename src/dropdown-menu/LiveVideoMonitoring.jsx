@@ -10,7 +10,7 @@ import { RiAlertLine } from "react-icons/ri";  // Real-Time Threat
 import { GiShield } from "react-icons/gi";     // Monitoring Challenges
 import { MdOutlineComputer, MdSupportAgent } from "react-icons/md"; // Advanced Surveillance Icons
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-
+import { MdSecurity } from "react-icons/md";
 const services = [
   { label: "Live Video Monitoring", path: "/live-video-monitoring" },
   { label: "Video Surveillance", path: "/video-surveillance" },
@@ -99,7 +99,7 @@ const LiveVideoMonitoring = () => {
 
                 <a className="contact-row" href="tel:+12816023421">
                   <span className="row-icon"><AiOutlinePhone /></span>
-                  <span>+923150289316</span>
+                  <span>+92 3150289316</span>
                 </a>
               </div>
             </div>
@@ -168,11 +168,11 @@ const LiveVideoMonitoring = () => {
 
             <div className="adv-left">
               <div className="adv-points">
-                <div className="adv-point">
+                  <div className="adv-point">
                   <div className="adv-icon"><MdOutlineComputer /></div>
                   <div>
                     <h4>Experienced Security Professionals</h4>
-                    <p>Our monitoring team brings decades of combined security experience.</p>
+                    <p>Our monitoring team delivers decades of experience, professional security monitoring.</p>
                   </div>
                 </div>
 

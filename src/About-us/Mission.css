@@ -1,18 +1,26 @@
   /* Main section container */
+  .mission-main{
+     padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+    url("../assets/background.png") center/cover no-repeat;
+  border-top: 2px solid orange;
+  color: white;
+  overflow: hidden;
+  }
   .mission-section {
-    margin-top: -150px;
     display: flex;
     align-items: stretch;
     justify-content: center;
     width: 100%;
-    min-height: 550px;
-    margin: 70px 0;
-    background: black;
+    background: none;
+  
+   
   }
 
   /* LEFT IMAGE */
   .mission-left {
     flex: 1;
+    padding: 25px;
   }
 
   .mission-left img {
@@ -54,7 +62,7 @@
   /* ICONS */
   .mission-icon {
     font-size: 36px;
-    color: #fff;
+    color: orange;
     min-width: 50px;
   }
 
@@ -70,7 +78,7 @@
   @media (max-width: 900px) {
     .mission-section {
       flex-direction: column;
-      margin-top: 50px;
+
       /* Reset negative margin */
       min-height: auto;
     }

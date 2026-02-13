@@ -21,12 +21,14 @@ const WhatWeDo = () => {
           <h2 className="section-title">
             Delivering <span>trusted</span> security and surveillance
           </h2>
-          <p className="section-text">
-          At Tycoon Serveillance Security, we specialize in providing reliable security and surveillance solutions designed to give homeowners and businesses complete peace of mind. Our services include the installation of advanced CCTV systems, as well as live video monitoring, video surveillance, access control management, alarm monitoring, accounts management, and virtual assistant support.
-          </p>
-          <p className="section-text">
-  We understand that every property and client has unique requirements, which is why our security solutions are customized to fit your specific needs. Using state-of-the-art technology, we deliver high-definition video, reliable performance, and seamless connectivity—keeping you in control around the clock.
-          </p>
+        <p className="section-text">
+  At Tycoon Surveillance Security, we specialize in delivering reliable security and surveillance support services designed to give homeowners and businesses complete peace of mind. Our expertise includes live video monitoring, video surveillance management, access control administration, alarm monitoring, accounts management, and professional virtual assistant support.
+</p>
+
+<p className="section-text">
+  We understand that every property and client has unique requirements, which is why our security services are tailored to meet your specific needs. By utilizing advanced monitoring tools and modern security platforms, we ensure dependable performance, real-time visibility, and seamless connectivity keeping you in control around the clock.
+</p>
+
 
           {/* CALL BOX */}
           <motion.div
@@ -39,7 +41,7 @@ const WhatWeDo = () => {
             </div>
             <div className="call-details">
               <p>Call For Any Kind Of Services</p>
-              <h3>+92150289316</h3>
+              <h3>+92 3150289316</h3>
             </div>
           </motion.div>
         </motion.div>

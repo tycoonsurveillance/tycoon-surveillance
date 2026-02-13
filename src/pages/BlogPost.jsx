@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
-import { blogData } from "../blogData";
+import { blogData } from "../blogData.js";
 import "../pages/BlogDetail.css";
 import Faqsection from "../pages/faqsection";
 

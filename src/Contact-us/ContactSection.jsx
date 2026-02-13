@@ -205,7 +205,7 @@ const socials = [
 
             <motion.div className="cp-form-box" variants={fadeUpDelay(0.3)}>
               <h3>Send us a message</h3>
-              <p>
+              <p className="contact-p">
                 We specialize in providing top-quality security and CCTV
                 solutions to safeguard your home and business.
               </p>

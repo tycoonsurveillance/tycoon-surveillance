@@ -34,7 +34,7 @@ export default function WhatWeDoSection() {
           </div>
 
           <h2 id="wwd-heading" className="wwd-title">
-            Comprehensive Security &amp; <br /> Surveillance Solutions
+            Comprehensive Security &amp; <span className="span-title">Surveillance Solutions</span> 
           </h2>
 
           <p className="wwd-copy">

@@ -11,8 +11,8 @@ import {
 import { MdKeyboardArrowDown } from "react-icons/md";
 import "./Retail.css";
 
-import heroImg from "../assets/About-Image-1.png";
-import sectionImg from "../assets/About-Image-1.png";
+import heroImg from "../Services-Images/Advanced Surveillance.png";
+import sectionImg from "../Services-Images/pic-2.png";
 import logo from "../assets/logo.png";
 
 const retailSectors = [
@@ -90,18 +90,18 @@ const Retail = () => {
             </div>
 
             <div className="retail-page-contact-rows">
-              <a href="mailto:info@tycoonguards.com" className="retail-page-contact-row">
+              <a href="tycoonsurveillance@gmail.com" className="retail-page-contact-row">
                 <span className="retail-page-row-icon email">
                   <FaEnvelope />
                 </span>
-                <span>info@tycoonguards.com</span>
+                <span>tycoonsurveillance@gmail.com</span>
               </a>
 
-              <a href="tel:+12816023421" className="retail-page-contact-row">
+              <a href="tel:+92 3150289316" className="retail-page-contact-row">
                 <span className="retail-page-row-icon phone">
                   <FaPhoneAlt />
                 </span>
-                <span>+(1) 281 602 3421</span>
+                <span>+92 3150289316</span>
               </a>
             </div>
           </div>

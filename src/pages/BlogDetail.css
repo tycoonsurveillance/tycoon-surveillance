@@ -7,42 +7,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 28px;
+
   margin-top: -170px;
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
   animation: fadeUp 0.9s ease;
-  width: 100%;
+
+   border-bottom: 1px solid orange;
   
 }
 
 .lvm-banner-title {
   font-size: 38px;
   font-weight: 900;
-  color: #fff;
+  color: #fff!important;
   letter-spacing: 1px;
   animation: fadeIn 1.2s ease;
   padding-top: 140px;
   text-align: center;
-  width: 100%;
-  
+
 }
 
 /* Full-width section */
 .bd-section {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 100px 20px; /* padding for spacing */
-  box-sizing: border-box;
+
+padding: 20px;
+  background: none;
+
+  border-bottom: 1px solid orange;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+    url("../assets/background.png") center/cover no-repeat;
   
 }
 
 /* Images box */
 .bd-image-box {
   margin-bottom: 60px;
-  border-radius: 22px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
   width: 100%;
+  
 }
 
 .bd-image-box img {
@@ -74,6 +78,7 @@
   margin-left: 0 !important;
   margin-right: 0 !important;
   padding: 0 !important;
+  color: white;
 }
 
 .bd-content h2 {
@@ -90,7 +95,7 @@
 
 .bd-content p {
   font-size: 17px;
-  color: #666;
+  color: white;
   line-height: 1.7;
   margin-bottom: 18px;
   text-align: justify;
@@ -116,20 +121,20 @@
 
 .bd-icon {
   font-size: 22px;
-  color: var(--accent);
+  color: orange;
   cursor: pointer;
   transition: transform 0.35s ease, color 0.35s ease;
 }
 
 .bd-icon:hover {
   transform: scale(1.3);
-  color: #000;
+  color: orange;
 }
 
 /* FAQ */
 .bd-faq-container {
   width: 100% !important;
-  background: #fff;
+  background: none;
   padding: 35px;
   border-radius: 22px;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
@@ -137,7 +142,7 @@
 }
 
 .bd-faq-label {
-  color: var(--accent);
+  color: orange;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -149,11 +154,11 @@
 }
 
 .bd-faq-heading span {
-  color: var(--accent);
+  color: orange;
 }
 
 .bd-faq-item {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid orange;
   padding: 18px 0;
   cursor: pointer;
 }
@@ -168,7 +173,7 @@
 .bd-faq-answer {
   margin-top: 12px;
   font-size: 15px;
-  color: #666;
+  color: white;
   line-height: 1.6;
 }
 
@@ -187,7 +192,7 @@
 
   .lvm-banner-title {
     font-size: 32px;
-    padding-top: 60px;
+   
   }
 }
 

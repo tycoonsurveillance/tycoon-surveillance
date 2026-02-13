@@ -11,7 +11,7 @@ const BlogDetail = () => {
   useEffect(() => window.scrollTo(0, 0), []);
 
   return (
-    <div className="lvm-page">
+    <div className="main-blogs">
       <section className="lvm-banner">
         <h1 className="lvm-banner-title">Transform Your Business Security: The Smart Guide to Modern Surveillance Solutions</h1>
       </section>

@@ -18,6 +18,7 @@ const itemVariants = {
 
 const SupportUnique = () => {
   return (
+     <section className="main-support">
     <motion.section
       className="su-section"
       initial="hidden"
@@ -99,6 +100,7 @@ const SupportUnique = () => {
         </motion.button>
       </motion.div>
     </motion.section>
+    </section>
   );
 };
 

@@ -53,7 +53,7 @@
   align-items: center;
   background: black;
   padding: 20px 30px;
-  border-radius: 14px;
+  border-radius: 10px;
   cursor: pointer;
   width: fit-content;
   transition: all 0.3s ease;
@@ -84,7 +84,7 @@
 
 .whatwedo-main-img {
   width: 500px;
-  border-radius: 12px;
+  border-radius: 10px;
   transition: all 0.5s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -95,7 +95,7 @@
   background: white;
   color: #333;
   padding: 20px 25px;
-  border-radius: 16px;
+  border-radius: 10px;
   width: 180px;
   text-align: justify;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -168,7 +168,7 @@
 
   .whatwedo-main-img {
     width: 100%;
-    border-radius: 14px;
+    border-radius: 10px;
   }
 
   /* STAT CARDS – SAME AS SCREENSHOT */
@@ -176,7 +176,7 @@
     position: absolute;
     width: 220px;
     background: #fff;
-    border-radius: 16px;
+    border-radius: 10px;
     padding: 20px;
     text-align: left;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);

@@ -12,31 +12,31 @@ import { FaVideo } from "react-icons/fa";
 const reviews = [
   {
     img: user1,
-    name: "Sarah M",
-    role: "Chief Executive Officer",
-    rating: 5,
-    text: `“Tycoon Serveillance has truly transformed our family’s sense of security. Their alarm monitoring service provides peace of mind, knowing our home is protected around the clock. The installation was fast, and the team was highly professional.”`,
+    name: "Daniel Carter",
+    role: "Retail Store Owner",
+    rating: 4,
+    text: `“We upgraded our CCTV system, and the results have been excellent. Clear footage, strong night vision, and a very professional installation team.”`,
   },
   {
     img: user2,
-    name: "Jessica L",
+    name: "Olivia Martinez",
     role: "Chief Executive Officer",
     rating: 5,
-    text: `“The fire alarm monitoring system they installed is outstanding. We get instant alerts, and it integrates perfectly with our existing setup. Their customer support is also highly responsive.”`,
+    text: `“The fire alarm monitoring system works flawlessly. Instant alerts and smooth integration with our existing setup. Very reliable service.”`,
+  },
+   {
+    img: user3,
+    name: "Daniel Carter",
+    role: "Security Manager",
+    rating: 3,
+    text: `“Quick installation and high-quality equipment. Our surveillance coverage has improved significantly since upgrading.”`,
   },
   {
-    img: user3,
-    name: "Michael B",
-    role: "Security Manager",
-    rating: 5,
-    text: `“Reliable, quick, and secure. Their CCTV installation has greatly enhanced our property surveillance. Highly recommended!”`,
-  },
-    {
     img: user4,
-    name: "John Miller",
-    role: "David R",
+    name: "Robert Hayes",
+    role: "Warehouse Operations Manager",
     rating: 5,
-    text: `“Reliable, quick, and secure. Their CCTV installation has greatly enhanced our property surveillance. Highly recommended!”`,
+    text: `“Professional from start to finish. The cameras cover every critical area, and the system runs without any issues.”`,
   },
 ];
 

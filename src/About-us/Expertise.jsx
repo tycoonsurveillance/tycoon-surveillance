@@ -1,21 +1,14 @@
  import React, { useEffect, useState } from "react";
  import { motion } from "framer-motion";
  import "../About-us/Expertise.css";
- 
-import comitee2 from "./about-imgs/about8.png";
+ import comitee2 from "./about-imgs/about8.png";
 
-
-
-
- const fadeUp = {
+const fadeUp = {
    initial: { opacity: 0, y: 40 },
    whileInView: { opacity: 1, y: 0 },
    viewport: { once: true },
    transition: { duration: 0.6, ease: "easeOut" },
  };
- 
-
-
  
  const Expertise = () => {
    const [openFAQ, setOpenFAQ] = useState(null);
@@ -29,7 +22,7 @@ import comitee2 from "./about-imgs/about8.png";
    }, []);
  
    return (
-     <div className="lvm-page">
+     <div className="main-expertise">
 
 
 <section className="expertise-section">
@@ -143,7 +136,7 @@ import comitee2 from "./about-imgs/about8.png";
         </div>
         <div className="support-body">
           <div className="support-title">24/7 Support</div>
-          <div className="support-number">+(281) 602-3421</div>
+          <div className="support-number">+92 3150289316</div>
         </div>
       </motion.div>
 

@@ -8,11 +8,11 @@
   --navbar-height: 110px;
   --container-max: 1180px;
 
-  --accent: #d93b1c;
-  --accent-light: #ff5c3a;
+  --accent: orange;
+  --accent-light: orange;
 
   --muted: #7a7a7a;
-  --text-light: #ccc;
+  --text-light: black;
 
   --card-radius: 22px;
   --pill-radius: 12px;
@@ -24,12 +24,19 @@
 
 /* ---------- PAGE BASE ---------- */
 .lvm-page {
-  font-family: Inter, sans-serif;
+  /* font-family: Inter, sans-serif;
   color: #111;
   background: #fff;
   animation: fadeSlow 0.6s ease;
-  
-}
+   */
+     /* padding: 100px 0; */
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+    url("../assets/background.png") center/cover no-repeat;
+  /* border-top: 2px solid orange; */
+  color: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid orange;
+ }
 
 .lvm-sidebar {
   position: sticky;
@@ -57,7 +64,7 @@
 .lvm-banner {
   height: 60vh;
   min-height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/contact-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -67,6 +74,7 @@
   /* Pull behind navbar */
   box-shadow: var(--shadow-lg);
   animation: fadeUp 0.9s ease;
+  border-bottom: 2px solid orange;
 }
 
 .lvm-banner-title {
@@ -96,13 +104,14 @@
 
 /* ---------- SIDEBAR CARDS ---------- */
 .svc-card {
-  background: #fbfbfb;
+  background: black;
   padding: 24px;
-  border-radius: var(--card-radius);
+  border-radius:10px;
   box-shadow: var(--shadow-md);
   border: 1px solid rgba(0, 0, 0, 0.04);
   animation: fadeUp 0.7s ease;
   vertical-align: middle;
+  border: 2px solid orange;
 }
 
 .svc-list {
@@ -134,13 +143,14 @@
   background: #fff;
   padding: 12px 16px;
   margin-bottom: 12px;
-  border-radius: var(--pill-radius);
+  border-radius: 10px;
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(0, 0, 0, 0.05);
   color: #333;
   font-size: 15px;
   text-decoration: none;
   transition: 0.28s ease;
+  border: 2px solid orange;
 }
 
 .svc-item:hover {
@@ -171,7 +181,7 @@
   margin-top: 20px;
   background: linear-gradient(180deg, #0f1313, #1c1c1c);
   padding: 24px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: var(--shadow-lg);
   color: #fff;
   animation: fadeUp 1s ease;
@@ -207,6 +217,7 @@
 
 .contact-rows {
   margin-top: 20px;
+
 }
 
 .contact-row {
@@ -215,12 +226,12 @@
   align-items: center;
   padding: 15px 12px;
   background: rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
+  border-radius: 10px;
   text-decoration: none;
   color: #fff;
   margin-bottom: 14px;
   transition: 0.25s ease;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid orange;
 }
 
 .contact-row:hover {
@@ -238,6 +249,7 @@
   font-weight: 900;
   margin-top: 40px;
   margin-bottom: 20px;
+  
 }
 
 .faq-title span {
@@ -253,7 +265,7 @@
 
 .faq-box {
   padding: 20px 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid orange;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -311,7 +323,7 @@
 .hero-image {
   width: 100%;
   height: 500px;
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: var(--shadow-lg);
   transition: 0.3s ease;
 }
@@ -322,14 +334,15 @@
 
 /* ---------- INFO BOX ---------- */
 .lvm-info-box {
-  background: #1e1e1e;
+  background:none;
   padding: 40px;
-  border-radius: 24px;
+  border-radius: 10px;
   margin-top: 40px;
   box-shadow: var(--shadow-lg);
   color: #fff;
   animation: fadeUp 1s ease;
   text-align: left;
+  border: 2px solid orange;
 }
 
 .lvm-info-box h2 {
@@ -343,6 +356,7 @@
   line-height: 1.75;
   margin-bottom: 26px;
   font-size: 15px;
+  text-align: justify;
 }
 
 .info-lists {
@@ -375,8 +389,8 @@
 /* ---------- ADVANCED SURVEILLANCE ---------- */
 .lvm-adv-section {
   margin-top: 50px;
-  background: #fff;
-  border-radius: 22px;
+  background: none;
+  border-radius: 10px;
   padding: 40px;
   box-shadow: var(--shadow-lg);
   display: grid;
@@ -384,6 +398,8 @@
   gap: 40px;
   align-items: center;
   animation: fadeUp 1s ease;
+  color: white;
+  border: 2px solid orange;
 }
 
 .adv-header {
@@ -394,6 +410,7 @@
 
 .hero-text{
   text-align: justify;
+  color: white;
 }
 .adv-title {
   font-size: 30px;
@@ -409,7 +426,7 @@
 .adv-desc {
   max-width: 750px;
   margin: 0 auto;
-  color: #555;
+  color: white;
   line-height: 1.7;
   text-align: justify;
 }
@@ -418,8 +435,8 @@
   display: flex;
   gap: 14px;
   padding: 14px;
-  border-radius: 14px;
-  background: #fafafa;
+  border-radius: 10px;
+  background: none;
   margin-bottom: 14px;
   box-shadow: var(--shadow-sm);
   transition: 0.3s ease;
@@ -431,9 +448,9 @@
 }
 
 .adv-icon {
-  width: 48px;
+  width: 100px;
   height: 48px;
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--accent);
   display: grid;
   place-items: center;
@@ -444,7 +461,7 @@
 
 .adv-image {
   width: 100%;
-  border-radius: 18px;
+  border-radius: 10px;
   box-shadow: var(--shadow-lg);
   transition: 0.3s ease;
 }
@@ -457,13 +474,14 @@
 .strategy-section {
   margin-top: 60px;
   padding: 20px 10px;
+
 }
 
 .strategy-title {
   font-size: 42px;
   font-weight: 900;
   margin-bottom: 10px;
-  color: #222;
+    color: white;
 }
 
 .strategy-title span {
@@ -472,9 +490,10 @@
 
 .strategy-desc {
   max-width: 850px;
-  color: #555;
+  color: white;
   line-height: 1.7;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 .strategy-card-grid {
@@ -482,14 +501,16 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
   margin-bottom: 40px;
+    text-align: justify;
 }
 
 .strategy-card {
   padding: 28px;
-  border-radius: 22px;
-  background: #fff;
+  border-radius: 10px;
+  background: black;
   box-shadow: var(--shadow-md);
   transition: 0.3s ease;
+  border:  2px solid orange;
 }
 
 .strategy-card:hover {
@@ -500,7 +521,7 @@
 .strategy-icon {
   width: 60px;
   height: 60px;
-  border-radius: 14px;
+  border-radius: 10px;
   background: var(--accent);
   display: grid;
   place-items: center;
@@ -518,9 +539,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #444;
+  color: white;
   margin-bottom: 12px;
   font-size: 17px;
+  text-align: justify;
 }
 
 .bullet span {
@@ -535,10 +557,12 @@
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 20px;
+  
 }
 
 .faq-title span {
   color: var(--accent);
+  
 }
 
 .faq-wrapper {
@@ -549,24 +573,26 @@
 }
 
 .faq-card {
-  background: #fff;
-  border-radius: var(--card-radius);
+  background: none;
+  border-radius: 10px;
   padding: 18px 22px;
   box-shadow: var(--shadow-sm);
   border: 1px solid rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.25s ease;
   overflow: hidden;
+  border-top: 1px solid orange;
+  
 }
 
 .faq-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--accent-light);
+  border-color: orange;
 }
 
 .faq-card.open {
   border-color: var(--accent);
-  background: #f9f9f9;
+  background: none;
   box-shadow: var(--shadow-md);
 }
 
@@ -579,7 +605,7 @@
 .faq-question h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #222;
+  color: white;
   margin: 0;
 }
 
@@ -611,7 +637,7 @@
 .faq-answer p {
   margin: 0;
   line-height: 1.6;
-  color: #555;
+  color: white;
   font-size: 15px;
 }
 

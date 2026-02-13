@@ -11,8 +11,8 @@ import {
 import { MdKeyboardArrowDown } from "react-icons/md";
 import "./Retail.css";
 
-import heroImg from "../assets/About-Image-1.png";
-import sectionImg from "../assets/About-Image-1.png";
+import heroImg from "../Services-Images/health1.png";
+import sectionImg from "../Services-Images/health2.png";
 import logo from "../assets/logo.png";
 
 const retailSectors = [
